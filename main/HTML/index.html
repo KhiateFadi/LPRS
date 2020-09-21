@@ -1061,16 +1061,16 @@
                     </a>
                     <h4>Login</h4>
                     <p>Don't have an account? Create your account. It's take less then a minutes</p>
-                    <form class="s12">
+                    <form action="traitement/connexion-traitement.php" method="POST" class="s12">
                         <div>
                             <div class="input-field s12">
-                                <input type="text" data-ng-model="name" class="validate">
+                                <input type="text" name="mail" data-ng-model="nom" class="validate">
                                 <label>User name</label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s12">
-                                <input type="password" class="validate">
+                                <input type="password" name="mdp" class="validate">
                                 <label>Password</label>
                             </div>
                         </div>
@@ -1114,28 +1114,34 @@
                     </a>
                     <h4>Create an Account</h4>
                     <p>Don't have an account? Create your account. It's take less then a minutes</p>
-                    <form class="s12">
+                    <form action="traitement/inscription-traitement.php" method="POST" class="s12">
                         <div>
                             <div class="input-field s12">
-                                <input type="text" data-ng-model="name1" class="validate">
-                                <label>User name</label>
+                                <input type="text" name="nom"  data-ng-model="name1" class="validate">
+                                <label>Last name</label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s12">
-                                <input type="email" class="validate">
+                                <input type="text" name="prenom"  data-ng-model="name1" class="validate">
+                                <label>First name</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s12">
+                                <input type="email" name="mail" class="validate">
                                 <label>Email id</label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s12">
-                                <input type="password" class="validate">
+                                <input type="password" name="mdp" class="validate">
                                 <label>Password</label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s12">
-                                <input type="password" class="validate">
+                                <input type="password" name="mdp" class="validate">
                                 <label>Confirm password</label>
                             </div>
                         </div>

@@ -35,17 +35,31 @@ session_start();
 if ($b == true) {
             $_SESSION['id'] = $b['id'];
 
-            header('Location: ../../index.html');
+            header('Location: ../index.html');
 
 
           }
           else {
-            echo "Mauvais login veuillez réessayer !";
-            header('Location:../indexx.html');
+           echo "Mauvais login veuillez réessayer !";
+           header('Location:../index.html');
           }
     }
 
+    public function modifier_les_donnees_utilisateur(Utilisateur $user)
+    	    {
+            $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
+    	        $request = $bdd->prepare(' UPDATE utilisateur SET nom = :nom, prenom = :prenom, mail = :mail, adresse = :adresse WHERE id = :id');
+    	        $request->execute(array(
+    	            'nom' => $user->getNom(),
+    	            'prenom' => $user->getPrenom(),
+    	            'mail' => $user->getMail(),
+    	            'adresse' => $user->getAdresse(),
+    	            'id' => $user->getId()
+    	        ));
+
+    	            header('Location: ../index.html');
+    	    }
 
 
 }

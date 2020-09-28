@@ -30,22 +30,23 @@ session_start();
           $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
           $req = $bdd->prepare('INSERT INTO utilisateur(nom, prenom, mdp, mail) VALUES(:nom, :prenom, :mdp, :mail)');
-          $a = $req->execute(array('nom'=>$new->getNom(), 'prenom'=>$new->getPrenom(), 'mdp'=>md5($new->getMdp()), 'mail'=>$new->getMail()));
-          $b = $req->fetch();
-if ($b == true) {
+          $result = $req->execute(array('nom'=>$new->getNom(), 'prenom'=>$new->getPrenom(), 'mdp'=>md5($new->getMdp()), 'mail'=>$new->getMail()));
+
+
+if ($result == true) {
             $_SESSION['id'] = $b['id'];
 
-            header('Location: ../index.html');
+            header('Location: ../../../index.html');
 
 
           }
           else {
            echo "Mauvais login veuillez réessayer !";
-           header('Location:../index.html');
+           header('Location: ../../../indexx.html');
           }
     }
 
-    public function modifier_les_donnees_utilisateur(Utilisateur $user)
+    public function modifier_les_donnees_utilxisateur(Utilisateur $user)
     	    {
             $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 

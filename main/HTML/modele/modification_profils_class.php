@@ -1,15 +1,17 @@
 <?php
-class modifier_les_donnees_utilisateur{
+class modifier_profils_class{
 private $_nom;
 private $_prenom;
-private $_mdp;
 private $_mail;
+private $_mdp;
+
 
 public function __construct($nom,$prenom,$mdp,$mail){
 $this->setNom($nom);
 $this->setPrenom($prenom);
-$this->setMdp($mdp);
 $this->setMail($mail);
+$this->setMdp($mdp);
+
 }
 
 public function setNom($nom){

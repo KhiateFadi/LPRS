@@ -30,22 +30,32 @@ session_start();
           $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
           $req = $bdd->prepare('INSERT INTO utilisateur(nom, prenom, mdp, mail) VALUES(:nom, :prenom, :mdp, :mail)');
-          $a = $req->execute(array('nom'=>$new->getNom(), 'prenom'=>$new->getPrenom(), 'mdp'=>md5($new->getMdp()), 'mail'=>$new->getMail()));
-          $b = $req->fetch();
-if ($b == true) {
+<<<<<<< Updated upstream
+          $result = $req->execute(array('nom'=>$new->getNom(), 'prenom'=>$new->getPrenom(), 'mdp'=>md5($new->getMdp()), 'mail'=>$new->getMail()));
+
+
+if ($result == true) {
             $_SESSION['id'] = $b['id'];
 
-            header('Location: ../index.html');
+            header('Location: ../../../index.html');
 
 
           }
           else {
            echo "Mauvais login veuillez réessayer !";
-           header('Location:../index.html');
+           header('Location: ../../../indexx.html');
           }
     }
 
+<<<<<<< HEAD
     public function modification_user(modification_profils_class $user)
+=======
+<<<<<<< HEAD
+    public function modifier_les_donnees_utilxisateur(Utilisateur $user)
+=======
+    public function modifier_les_donnees_utilisateur(modification_profils_class $user)
+>>>>>>> 1b92da48b64b011b2bd80bcec10cd6bfdccd7fa2
+>>>>>>> 27be2f6fcd52d255823a2ef18c6f20d6b54af525
     	    {
             
             $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
@@ -62,7 +72,11 @@ if ($b == true) {
     	            header('Location: ../index.html');
     	    }
 
+=======
+          $a = $req->execute(array('nom'=>$new->getNom(), 'prenom'=>$new->getPrenom(), 'mdp'=>md5($new->getMdp()), 'mail'=>$new->getMail()));
+          $b = $req->fetch();
+>>>>>>> Stashed changes
 
 }
-
+}
 ?>

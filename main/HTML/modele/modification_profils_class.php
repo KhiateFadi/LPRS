@@ -17,10 +17,7 @@ $this->setMdp($mdp);
 public function setNom($nom){
 //if(is_string ($nom)){
 $this->_nom = $nom ;
-//}
-//else {
-//echo"t nul";
-//}
+
 }
 public function setPrenom($prenom){
 //  if(is_string ($prenom)){

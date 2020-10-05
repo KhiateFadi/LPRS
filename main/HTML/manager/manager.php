@@ -30,6 +30,7 @@ session_start();
           $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
           $req = $bdd->prepare('INSERT INTO utilisateur(nom, prenom, mdp, mail) VALUES(:nom, :prenom, :mdp, :mail)');
+<<<<<<< Updated upstream
           $result = $req->execute(array('nom'=>$new->getNom(), 'prenom'=>$new->getPrenom(), 'mdp'=>md5($new->getMdp()), 'mail'=>$new->getMail()));
 
 
@@ -67,7 +68,11 @@ if ($result == true) {
     	            header('Location: ../index.html');
     	    }
 
+=======
+          $a = $req->execute(array('nom'=>$new->getNom(), 'prenom'=>$new->getPrenom(), 'mdp'=>md5($new->getMdp()), 'mail'=>$new->getMail()));
+          $b = $req->fetch();
+>>>>>>> Stashed changes
 
 }
-
+}
 ?>

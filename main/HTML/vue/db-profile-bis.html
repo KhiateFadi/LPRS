@@ -444,7 +444,7 @@
                         </ul>
                     </div>
                 </div>
-        <form action="main/HTML/traitement/inscription-traitement.php" method="POST">
+        <form action="../traitement/modification_profils-traitement.php" method="POST">
                 <div class="col-md-9">
                     <div class="udb">
 
@@ -459,24 +459,25 @@
                                             <td>Nom</td>
                                             <td>:</td>
                                         <td>   <input style="border-bottom:none" type="text" name="name"
-       minlength="4" maxlength="8" size="10"></input></td>
+       minlength="1" maxlength="100" size="100"></input></td>
                                         </tr>
                                         <tr>
                                             <td>Prenom</td>
                                             <td>:</td>
                                             <td><input style="border-bottom:none" type="text" name="prenom"
-           minlength="4" maxlength="8" size="10"></input></td>
-                                        </tr>
+           minlength="1" maxlength="100" size="100"></input></td>
+                                      </tr>
                                         <tr>
                                             <td>Email</td>
                                             <td>:</td>
                                             <td><input style="border-bottom:none" type="text" name="mail"
-           minlength="4" maxlength="8" size="10"></input></td>
+           minlength="1" maxlength="100" size="100"></input></td>
                                         </tr>
                                         <tr>
                                             <td>Mots de passe</td>
                                             <td>:</td>
-                                            <td></td>
+                                            <td><input style="border-bottom:none" type="text" name="mdp"
+           minlength="1" maxlength="100" size="100" ></input></td>
                                         </tr>
 
 
@@ -485,9 +486,10 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                              </form>
                                 <div class="sdb-bot-edit">
                                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
-                                    <a href="#" class="waves-effect waves-light btn-large sdb-btn sdb-btn-edit"><i class="fa fa-pencil"></i> Edit my profile</a>
+                                    <a href="../traitement/modification_profils-traitement.php" class="waves-effect waves-light btn-large sdb-btn sdb-btn-edit"><i class="fa fa-pencil"></i> Edit my profile</a>
                                 </div>
                             </div>
                         </div>

@@ -1,9 +1,9 @@
 <?php
 class modifier_profils_class{
-private $_nom;
-private $_prenom;
-private $_mail;
-private $_mdp;
+public $_nom;
+public $_prenom;
+public $_mail;
+public $_mdp;
 
 
 public function __construct($nom,$prenom,$mdp,$mail){

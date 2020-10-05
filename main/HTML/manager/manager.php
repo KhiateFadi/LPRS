@@ -45,9 +45,9 @@ if ($b == true) {
           }
     }
 
-    public function modifier_les_donnees_utilisateur(modification_profils_class $user)
+    public function modification_user(modification_profils_class $user)
     	    {
-            require_once("../modele/modification_profils_class.php");
+            
             $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
     	        $request = $bdd->prepare(' UPDATE utilisateur SET nom = :nom, prenom = :prenom, mail = :mail, mdp = :mdp WHERE id = :id');

@@ -45,18 +45,17 @@ if ($b == true) {
           }
     }
 
-    public function modification_user(modification_profils_class $user)
+    public function modification_user(modifier_profils_class $user,$id)
     	    {
 
             $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
-    	        $request = $bdd->prepare(' UPDATE utilisateur SET nom = :nom, prenom = :prenom, mail = :mail, mdp = :mdp WHERE id = :id');
+    	        $request = $bdd->prepare(" UPDATE utilisateur SET nom = :nom, prenom = :prenom, mail = :mail, mdp = :mdp WHERE id = .'$id'");
     	        $request->execute(array(
     	            'nom' => $user->getNom(),
     	            'prenom' => $user->getPrenom(),
     	            'mail' => $user->getMail(),
     	            'mdp' => $user->getMdp(),
-    	            'id' => $user->getId()
     	        ));
 
     	            header('Location: ../index.html');

@@ -45,7 +45,7 @@ if ($b == true) {
           }
     }
 
-    public function modification_user(modifier_profils_class $user,$id)
+    public function modification_user($user,$id)
     	    {
 
             $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');

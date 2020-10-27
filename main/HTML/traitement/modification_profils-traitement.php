@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once('../modele/modification_profils_class.php');
 require_once('../manager/manager.php');
 

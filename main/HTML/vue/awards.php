@@ -1,3 +1,8 @@
+<?
+session_start ();
+require('../manager/manager.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -275,6 +280,12 @@
                                         <span>21 May 1966</span>
                                     </div>
                                     <div class="s17-eve-time-msg">
+                                      <?php
+                                      $a = new Manager();
+                                      $c = $a->afficheOffre($_SESSION['id']);
+
+                                      //echo $value;
+                                      echo 'Votre nom :'.' '.$c['nom']; ?>
                                         <h4>Welcome to Academy</h4>
                                         <p>Established in 1966 Donec quis turpis vitae sem lobortis sodales. Suspendisse blandit magna a purus porta feugiat. Sed nec auctor erat. Nam eu dui lectus. Etiam suscipit vel mauris eget bibendum.</p>
                                     </div>

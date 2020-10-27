@@ -2,7 +2,6 @@
 Class Manager{
 
 public function connexion($con){
-session_start();
         $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
 
@@ -11,22 +10,14 @@ session_start();
   $c = $red->fetch();
 
   var_dump($con);
-
   if ($c == true) {
     $_SESSION['id'] = $c['id'];
-<<<<<<< HEAD
-
-    header('Location: ../index.html');
-
-
-=======
     var_dump($_SESSION);
-     header('Location: ../index.php');
->>>>>>> fd46ece6a9793051952cdbb795850682c4ae27fb
+     header('Location: ../index.html');
   }
   else {
     echo "Mauvais login veuillez réessayer !";
-    header('Location:../index.html');
+     header('Location:../indexx.html');
   }
 
   }
@@ -40,13 +31,13 @@ session_start();
 if ($b == true) {
             $_SESSION['id'] = $b['id'];
 
-            header('Location: ../index.php');
+            header('Location: ../index.html');
 
 
           }
           else {
            echo "Mauvais login veuillez réessayer !";
-           header('Location:../index.php');
+           header('Location:../index.html');
           }
     }
 
@@ -63,33 +54,41 @@ if ($b == true) {
     	            'mdp' => $user->getMdp(),
     	        ));
 
-    	            header('Location: ../index.php');
+    	            header('Location: ../index.html');
     	    }
 
 
 
 
+          public function offre($stage){
+                  $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+
+                  $req = $bdd->prepare('INSERT INTO evenement(nom, description, duree, localisation) VALUES(:nom, :description, :duree, :localisation)');
+                  $a = $req->execute(array('nom'=>$stage->getNom(), 'description'=>$stage->getDescription(), 'duree'=>$stage->getDuree(), 'localisation'=>$stage->getLocalisation()));
+                  $b = $req->fetch();
+
+          if ($b == true) {
+                  //  $_SESSION['id'] = $b['id'];
+
+                    header('Location: ../index.html');
 
 
-public function offre($stage){
-        $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+                  }
+                  else {
+                   echo "Mauvais login veuillez réessayer !";
+                  header('Location:../index.html');
+                  }
+            }
 
-        $req = $bdd->prepare('INSERT INTO evenement(nom, description, duree, localisation) VALUES(:nom, :description, :duree, :localisation)');
-        $a = $req->execute(array('nom'=>$stage->getNom(), 'description'=>$stage->getDescription(), 'duree'=>$stage->getDuree(), 'localisation'=>$stage->getLocalisation()));
-        $b = $req->fetch();
+    public function afficheUser($id){
 
-if ($b == true) {
-        //  $_SESSION['id'] = $b['id'];
+$bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+$red = $bdd->prepare('SELECT * FROM utilisateur WHERE id=:id');
+$red->execute(array('id'=>$_SESSION['id']));
+$c = $red->fetch();
+  return $c;
 
-          header('Location: ../index.html');
-
-
-        }
-        else {
-         echo "Mauvais login veuillez réessayer !";
-        header('Location:../index.html');
-        }
-  }
+}
 }
 
 

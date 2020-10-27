@@ -266,7 +266,7 @@ session_start();
                                     </tbody>
                                 </table>
                                 <div class="sdb-bot-edit">
-                                    <a href="#" class="waves-effect waves-light btn-large sdb-btn sdb-btn-edit"><i class="fa fa-pencil"></i> Edit my profile</a>
+                                    <a href="db-profile-bis.html" class="waves-effect waves-light btn-large sdb-btn sdb-btn-edit"><i class="fa fa-pencil"></i> Edit my profile</a>
                                 </div>
                             </div>
                         </div>

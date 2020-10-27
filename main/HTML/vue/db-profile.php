@@ -67,7 +67,7 @@ session_start();
                           </ul>
                           <h4>All Pages</h4>
                           <ul>
-                              <li><a href="index.php">Accueil</a></li>
+                              <li><a href="../../../index.php">Accueil</a></li>
                               <li><a href="main/HTML/vue/all-courses.html">Formation</a></li>
                               <li><a href="main/HTML/vue/awards.html">Evénement</a></li>
                               <li><a href="main/HTML/vue/contact-us.html">Contact</a></li>
@@ -115,12 +115,12 @@ session_start();
                 <div class="row">
                     <div class="col-md-12">
                         <div class="wed-logo">
-                            <a href="index.php"><img style="margin-left:60px;width:90px;height:90px;margin-top:-9px;" src="../images/logo.png" alt="" />
+                            <a href="../../../index.php"><img style="margin-left:60px;width:90px;height:90px;margin-top:-9px;" src="../images/logo.png" alt="" />
                             </a>
                         </div>
                         <div class="main-menu">
                             <ul>
-                                <li><a href="index.php">Accueil</a>
+                                <li><a href="../../../index.php">Accueil</a>
                                 </li>
                                 <li class="about-menu">
                                     <a href="main/HTML/vue/all-courses.html" class="mm-arr">Formation</a>

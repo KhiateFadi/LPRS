@@ -12,7 +12,6 @@ public function connexion($con){
   var_dump($con);
   if ($c == true) {
     $_SESSION['id'] = $c['id'];
-    var_dump($_SESSION);
      header('Location: ../index.html');
   }
   else {
@@ -53,6 +52,10 @@ if ($b == true) {
     	            'mail' => $user->getMail(),
     	            'mdp' => $user->getMdp(),
     	        ));
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9f1251f03b66708e92af46e98599f16e49e564d2
 
 
     	           header('Location: ../vue/db-profils.php');

@@ -13,7 +13,7 @@ public function connexion($con){
   if ($c == true) {
     $_SESSION['id'] = $c['id'];
     var_dump($_SESSION);
-     header('Location: ../index.html');
+     header('Location: ../index.php');
   }
   else {
     echo "Mauvais login veuillez réessayer !";
@@ -31,13 +31,13 @@ public function connexion($con){
 if ($b == true) {
             $_SESSION['id'] = $b['id'];
 
-            header('Location: ../index.html');
+            header('Location: ../index.php');
 
 
           }
           else {
            echo "Mauvais login veuillez réessayer !";
-           header('Location:../index.html');
+           header('Location:../index.php');
           }
     }
 
@@ -54,7 +54,7 @@ if ($b == true) {
     	            'mdp' => $user->getMdp(),
     	        ));
 
-    	            header('Location: ../index.html');
+    	            header('Location: ../index.php');
     	    }
     public function afficheUser($id){
 

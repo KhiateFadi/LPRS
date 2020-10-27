@@ -58,7 +58,7 @@ session_start();
                             <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
                             <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
                             <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
-                            <li><a href="main/HTML/vue/db-profile.html">BTS SIO – OPTION SLAM</a></li>
+                            <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
                           </ul>
                           <h4>Compte</h4>
                           <ul>
@@ -67,7 +67,7 @@ session_start();
                           </ul>
                           <h4>All Pages</h4>
                           <ul>
-                              <li><a href="index.html">Accueil</a></li>
+                              <li><a href="index.php">Accueil</a></li>
                               <li><a href="main/HTML/vue/all-courses.html">Formation</a></li>
                               <li><a href="main/HTML/vue/awards.html">Evénement</a></li>
                               <li><a href="main/HTML/vue/contact-us.html">Contact</a></li>
@@ -98,8 +98,7 @@ session_start();
                         </div>
                         <div class="ed-com-t1-right">
                             <ul>
-                              <li><a href="#!" data-toggle="modal" data-target="#modal1">Connexion</a>
-                              </li>
+
                               <li><a href="#!" data-toggle="modal" data-target="#modal2">Inscription</a>
                               </li>
                             </ul>
@@ -116,12 +115,12 @@ session_start();
                 <div class="row">
                     <div class="col-md-12">
                         <div class="wed-logo">
-                            <a href="index.html"><img style="margin-left:60px;width:90px;height:90px;margin-top:-9px;" src="../images/logo.png" alt="" />
+                            <a href="index.php"><img style="margin-left:60px;width:90px;height:90px;margin-top:-9px;" src="../images/logo.png" alt="" />
                             </a>
                         </div>
                         <div class="main-menu">
                             <ul>
-                                <li><a href="index.html">Accueil</a>
+                                <li><a href="index.php">Accueil</a>
                                 </li>
                                 <li class="about-menu">
                                     <a href="main/HTML/vue/all-courses.html" class="mm-arr">Formation</a>
@@ -152,7 +151,7 @@ session_start();
                                                         <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
                                                         <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
                                                         <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
-                                                        <li><a href="main/HTML/vue/db-profile.html">BTS SIO – OPTION SLAM</a></li>
+                                                        <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
 
                                                     </ul>
                                                 </div>
@@ -197,7 +196,7 @@ session_start();
                                           <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
                                           <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
                                           <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
-                                          <li><a href="main/HTML/vue/db-profile.html">BTS SIO – OPTION SLAM</a></li>
+                                          <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -222,7 +221,7 @@ session_start();
                 <div class="col-md-9 col-md-offset-3">
                     <ul>
                         <li><a href="dashboard.html">My Dashboard</a></li>
-                        <li><a href="db-profile.html" class="pro-act">Profile</a></li>
+                        <li><a href="db-profile.php" class="pro-act">Profile</a></li>
                         <li><a href="#">Notifications</a></li>
                     </ul>
                 </div>
@@ -267,7 +266,6 @@ session_start();
                                     </tbody>
                                 </table>
                                 <div class="sdb-bot-edit">
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
                                     <a href="#" class="waves-effect waves-light btn-large sdb-btn sdb-btn-edit"><i class="fa fa-pencil"></i> Edit my profile</a>
                                 </div>
                             </div>
@@ -319,7 +317,7 @@ session_start();
                           <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
                           <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
                           <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
-                          <li><a href="main/HTML/vue/db-profile.html">BTS SIO – OPTION SLAM</a></li>
+                          <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">

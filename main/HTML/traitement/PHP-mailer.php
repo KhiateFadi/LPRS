@@ -17,6 +17,6 @@ if(!$mail->Send()) {
   echo '<body onLoad="alert(\'Erreur\')">';
 echo '<meta http-equiv="refresh" content="0;URL=../View/contact.php">';
 } else {
-   header("location: ../../index.html");
+   header("location: ../../index.php");
 }
 ?>

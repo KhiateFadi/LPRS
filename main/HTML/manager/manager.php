@@ -2,7 +2,6 @@
 Class Manager{
 
 public function connexion($con){
-session_start();
         $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
 
@@ -11,17 +10,14 @@ session_start();
   $c = $red->fetch();
 
   var_dump($con);
-
   if ($c == true) {
     $_SESSION['id'] = $c['id'];
-
-    header('Location: ../index.html');
-
-
+    var_dump($_SESSION);
+     header('Location: ../index.html');
   }
   else {
     echo "Mauvais login veuillez réessayer !";
-    header('Location:../index.html');
+     header('Location:../indexx.html');
   }
 
   }
@@ -60,5 +56,14 @@ if ($b == true) {
 
     	            header('Location: ../index.html');
     	    }
+    public function afficheUser($id){
+
+$bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+$red = $bdd->prepare('SELECT * FROM utilisateur WHERE id=:id');
+$red->execute(array('id'=>$_SESSION['id']));
+$c = $red->fetch();
+  return $c;
+
+}
 }
 ?>

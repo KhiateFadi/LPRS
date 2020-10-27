@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -97,10 +98,17 @@
                         </div>
                         <div class="ed-com-t1-right">
                             <ul>
-                                <li><a href="#!" data-toggle="modal" data-target="#modal1">Connexion</a>
-                                </li>
-                                <li><a href="#!" data-toggle="modal" data-target="#modal2">Inscription</a>
-                                </li>
+                              <li><a href="#!" data-toggle="modal" data-target="#modal2">Inscription</a></li>
+                                <?php
+
+                                  if (empty($_SESSION))
+                                { ?>
+
+                                  <li><a href="#!" data-toggle="modal" data-target="#modal1">Connexion</a></li>
+                                <?php }
+                                else{?>
+                                    <li><a href="main/HTML/vue/db-profile.html"><span>Mon compte</span></a></li>
+                              <?php } ?>
                             </ul>
                         </div>
 
@@ -342,16 +350,16 @@
                     </a>
                     <h4>Login</h4>
                     <p>Don't have an account? Create your account. It's take less then a minutes</p>
-                    <form class="s12">
+                      <form action="main/HTML/traitement/connexion-traitement.php" method="POST" class="s12">
                         <div>
                             <div class="input-field s12">
-                                <input type="text" data-ng-model="name" class="validate">
+                                <input name="mail" type="text" data-ng-model="name" class="validate">
                                 <label>User name</label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s12">
-                                <input type="password" class="validate">
+                                <input name="mdp" type="password" class="validate">
                                 <label>Password</label>
                             </div>
                         </div>

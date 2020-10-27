@@ -556,29 +556,30 @@
 
                     </div>
                     <div class="tab-inn">
-                        <form action="" method="POST">
+                        <form action="../traitement/offre-traitement.php" method="POST">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input type="text" value="" class="validate" required>
+                                    <input type="text" value="" class="validate" name="nom" required>
                                     <label class="">Nom de l'entreprise</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea></textarea>
+
+                                  <input type="text" name="description">
                                     <label class="">Description de l'offre</label>
                                 </div>
                             </div>
                             <div class="row">
 
-                                <div class="input-field col s6">
-                                    <input type="text" class="validate" value="" required>
+                                <div class="input-field col s12">
+                                    <input type="text" class="validate" value="" name="duree"required>
                                     <label class="">Durée du contract (en mois)</label>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="input-field col s6">
-                                    <input type="text" value="" class="validate">
+                                <div class="input-field col s12">
+                                    <input type="text" value="" name="localisation"class="validate">
                                     <label class="">Localisation</label>
                                 </div>
                             </div>

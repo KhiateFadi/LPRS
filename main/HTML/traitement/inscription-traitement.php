@@ -7,5 +7,5 @@ $inscription = new inscription($_POST['nom'], $_POST['prenom'], $_POST['mdp'], $
 $manager=new Manager();
 $manager->inscription($inscription);
 
-var_dump($inscription);
+
 ?>

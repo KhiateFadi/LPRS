@@ -60,5 +60,33 @@ if ($b == true) {
 
     	            header('Location: ../index.html');
     	    }
+
+
+
+
+
+
+public function offre($stage){
+        $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+
+        $req = $bdd->prepare('INSERT INTO evenement(nom, description, duree, localisation) VALUES(:nom, :description, :duree, :localisation)');
+        $a = $req->execute(array('nom'=>$stage->getNom(), 'description'=>$stage->getDescription(), 'duree'=>$stage->getDuree(), 'localisation'=>$stage->getLocalisation()));
+        $b = $req->fetch();
+
+if ($b == true) {
+        //  $_SESSION['id'] = $b['id'];
+
+          header('Location: ../index.html');
+
+
+        }
+        else {
+         echo "Mauvais login veuillez réessayer !";
+        header('Location:../index.html');
+        }
+  }
 }
+
+
+
 ?>

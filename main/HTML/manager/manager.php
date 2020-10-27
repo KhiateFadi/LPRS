@@ -53,9 +53,9 @@ if ($b == true) {
     	            'mail' => $user->getMail(),
     	            'mdp' => $user->getMdp(),
     	        ));
-              
 
-    	            //header('Location: ../index.html');
+
+    	           header('Location: ../vue/db-profils.php');
     	    }
 
 

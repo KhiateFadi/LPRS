@@ -54,7 +54,7 @@
                               <li><a href="main/HTML/vue/all-courses.html">BAC PRO TU</a></li>
                               <li><a href="main/HTML/vue/all-courses.html">BAC PRO MEI</a></li>
                               <li><a href="main/HTML/vue/admission.html">BAC PRO SN</a></li>
-                              <li><a href="main/HTML/vue/awards.html">FORMATION SST</a></li>
+                              <li><a href="main/HTML/vue/awards.php">FORMATION SST</a></li>
                               <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
                               <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
                               <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
@@ -69,7 +69,7 @@
                             <ul>
                                 <li><a href="index.php">Accueil</a></li>
                                 <li><a href="main/HTML/vue/all-courses.html">Formation</a></li>
-                                <li><a href="main/HTML/vue/awards.html">Evénement</a></li>
+                                <li><a href="main/HTML/vue/awards.php">Evénement</a></li>
                                 <li><a href="main/HTML/vue/contact-us.html">Contact</a></li>
 
                             </ul>
@@ -151,7 +151,7 @@
                                                         <li><a href="main/HTML/vue/all-courses.html">BAC PRO TU</a></li>
                                                         <li><a href="main/HTML/vue/all-courses.html">BAC PRO MEI</a></li>
                                                         <li><a href="main/HTML/vue/admission.html">BAC PRO SN</a></li>
-                                                        <li><a href="main/HTML/vue/awards.html">FORMATION SST</a></li>
+                                                        <li><a href="main/HTML/vue/awards.php">FORMATION SST</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="mm1-com mm1-s4">
@@ -168,7 +168,7 @@
                                     </div>
                                 </li>
                                 <li class="admi-menu">
-                                    <a href="main/HTML/vue/awards.html" class="mm-arr">Evénement</a>
+                                    <a href="main/HTML/vue/awards.php" class="mm-arr">Evénement</a>
                                     <!-- MEGA MENU 1 -->
                                 </li>
                                 <li><a href="main/HTML/vue/contact-us.html">Contact</a></li>
@@ -200,7 +200,7 @@
                                           <li><a href="main/HTML/vue/all-courses.html">BAC PRO TU</a></li>
                                           <li><a href="main/HTML/vue/all-courses.html">BAC PRO MEI</a></li>
                                           <li><a href="main/HTML/vue/admission.html">BAC PRO SN</a></li>
-                                          <li><a href="main/HTML/vue/awards.html">FORMATION SST</a></li>
+                                          <li><a href="main/HTML/vue/awards.php">FORMATION SST</a></li>
                                           <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
                                           <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
                                           <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
@@ -287,7 +287,7 @@
                       <li><a href="main/HTML/vue/all-courses.html">BAC PRO TU</a></li>
                       <li><a href="main/HTML/vue/all-courses.html">BAC PRO MEI</a></li>
                       <li><a href="main/HTML/vue/admission.html">BAC PRO SN</a></li>
-                      <li><a href="main/HTML/vue/awards.html">FORMATION SST</a></li>
+                      <li><a href="main/HTML/vue/awards.php">FORMATION SST</a></li>
                       <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
                       <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
                       <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>

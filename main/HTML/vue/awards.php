@@ -1,6 +1,6 @@
-<?
-session_start ();
-require('../manager/manager.php');
+<?php
+session_start();
+require_once('../manager/manager.php');
 ?>
 
 <!DOCTYPE html>
@@ -279,15 +279,35 @@ require('../manager/manager.php');
                                     <div class="s17-eve-time-tim">
                                         <span>21 May 1966</span>
                                     </div>
-                                    <div class="s17-eve-time-msg">
-                                      <?php
-                                      $a = new Manager();
-                                      $c = $a->afficheOffre($_SESSION['id']);
+                                    <?php
 
-                                      //echo $value;
-                                      echo 'Votre nom :'.' '.$c['nom']; ?>
-                                        <h4>Welcome to Academy</h4>
-                                        <p>Established in 1966 Donec quis turpis vitae sem lobortis sodales. Suspendisse blandit magna a purus porta feugiat. Sed nec auctor erat. Nam eu dui lectus. Etiam suscipit vel mauris eget bibendum.</p>
+                                    $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+                                    $tab_requête = ['SELECT nom FROM evenement'];
+                                    for ($i=0; $i <1; $i++) {
+                                      $red = $bdd->query($tab_requête[$i]);
+                                      $tableau =  $red->fetchall();
+                                      
+
+                                      }
+
+
+
+
+
+
+                                    for ($i=0; $i < count($tableau) ; $i++) {
+                                      foreach (array_unique($tableau[$i]) as $key => $value) {
+                                       echo $key.' '.$value;
+                                      }
+                                    }
+                                  ?>
+
+
+
+
+
+                                    <div class="s17-eve-time-msg">
+
                                     </div>
                                 </div>
                             </li>

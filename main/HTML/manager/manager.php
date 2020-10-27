@@ -14,10 +14,15 @@ session_start();
 
   if ($c == true) {
     $_SESSION['id'] = $c['id'];
+<<<<<<< HEAD
 
     header('Location: ../index.html');
 
 
+=======
+    var_dump($_SESSION);
+     header('Location: ../index.php');
+>>>>>>> fd46ece6a9793051952cdbb795850682c4ae27fb
   }
   else {
     echo "Mauvais login veuillez réessayer !";
@@ -35,13 +40,13 @@ session_start();
 if ($b == true) {
             $_SESSION['id'] = $b['id'];
 
-            header('Location: ../index.html');
+            header('Location: ../index.php');
 
 
           }
           else {
            echo "Mauvais login veuillez réessayer !";
-           header('Location:../index.html');
+           header('Location:../index.php');
           }
     }
 
@@ -58,7 +63,7 @@ if ($b == true) {
     	            'mdp' => $user->getMdp(),
     	        ));
 
-    	            header('Location: ../index.html');
+    	            header('Location: ../index.php');
     	    }
 
 

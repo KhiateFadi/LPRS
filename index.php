@@ -58,7 +58,7 @@
                               <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
                               <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
                               <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
-                              <li><a href="main/HTML/vue/db-profile.html">BTS SIO – OPTION SLAM</a></li>
+                              <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
                             </ul>
                             <h4>Compte</h4>
                             <ul>
@@ -67,7 +67,7 @@
                             </ul>
                             <h4>All Pages</h4>
                             <ul>
-                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="index.php">Accueil</a></li>
                                 <li><a href="main/HTML/vue/all-courses.html">Formation</a></li>
                                 <li><a href="main/HTML/vue/awards.html">Evénement</a></li>
                                 <li><a href="main/HTML/vue/contact-us.html">Contact</a></li>
@@ -107,7 +107,7 @@
                                   <li><a href="#!" data-toggle="modal" data-target="#modal1">Connexion</a></li>
                                 <?php }
                                 else{?>
-                                    <li><a href="main/HTML/vue/db-profile.html"><span>Mon compte</span></a></li>
+                                    <li><a href="main/HTML/vue/db-profile.php"><span>Mon compte</span></a></li>
                               <?php } ?>
                             </ul>
                         </div>
@@ -123,12 +123,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="wed-logo">
-                            <a href="index.html"><img style="margin-left:60px;width:90px;height:90px;margin-top:-9px;" src="main/HTML/images/logo.png" alt="" />
+                            <a href="index.php"><img style="margin-left:60px;width:90px;height:90px;margin-top:-9px;" src="main/HTML/images/logo.png" alt="" />
                             </a>
                         </div>
                         <div class="main-menu">
                             <ul>
-                                <li><a href="index.html">Accueil</a>
+                                <li><a href="index.php">Accueil</a>
                                 </li>
                                 <li class="about-menu">
                                     <a href="main/HTML/vue/all-courses.html" class="mm-arr">Formation</a>
@@ -159,7 +159,7 @@
                                                         <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
                                                         <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
                                                         <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
-                                                        <li><a href="main/HTML/vue/db-profile.html">BTS SIO – OPTION SLAM</a></li>
+                                                        <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
 
                                                     </ul>
                                                 </div>
@@ -204,7 +204,7 @@
                                           <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
                                           <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
                                           <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
-                                          <li><a href="main/HTML/vue/db-profile.html">BTS SIO – OPTION SLAM</a></li>
+                                          <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -291,7 +291,7 @@
                       <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
                       <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
                       <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
-                      <li><a href="main/HTML/vue/db-profile.html">BTS SIO – OPTION SLAM</a></li>
+                      <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">

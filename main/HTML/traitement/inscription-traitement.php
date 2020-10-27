@@ -8,4 +8,5 @@ $manager=new Manager();
 $manager->inscription($inscription);
 
 
+
 ?>

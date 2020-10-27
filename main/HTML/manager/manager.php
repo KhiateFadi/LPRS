@@ -46,15 +46,16 @@ if ($b == true) {
 
             $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
-    	        $request = $bdd->prepare(" UPDATE utilisateur SET nom = :nom, prenom = :prenom, mail = :mail, mdp = :mdp WHERE id = .'$id'");
-    	        $request->execute(array(
+    	        $request = $bdd->prepare(" UPDATE utilisateur SET nom = :nom, prenom = :prenom, mail = :mail, mdp = :mdp WHERE id = '$id'");
+    	       $a= $request->execute(array(
     	            'nom' => $user->getNom(),
     	            'prenom' => $user->getPrenom(),
     	            'mail' => $user->getMail(),
     	            'mdp' => $user->getMdp(),
     	        ));
+              
 
-    	            header('Location: ../index.html');
+    	            //header('Location: ../index.html');
     	    }
 
 
@@ -89,6 +90,19 @@ $c = $red->fetch();
   return $c;
 
 }
+
+public function afficheOffre($id){
+
+$bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+$red = $bdd->prepare('SELECT * FROM evenement WHERE id=:id');
+$red->execute(array('id'=>$_SESSION['id']));
+$c = $red->fetch();
+return $c;
+
+}
+
+
+
 }
 
 

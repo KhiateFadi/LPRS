@@ -2194,7 +2194,7 @@
      padding: 15px 0px 25px 0px;
 }
  .cor-tim-tab ul li{
-     background: url('../images/book.png') no-repeat left center;
+     background: url('') no-repeat left center;
      padding-left:50px;
      margin-bottom:20px;
      font-size:13px;
@@ -2214,13 +2214,7 @@
 /*-------------------------------------------------*/
 /* =  14.USER DASHBOARD
 /*-------------------------------------------------*/
- .pro-cover{
-     background: url('../images/pro-bg.jpg') no-repeat center center;
-     width:100%;
-     height:250px;
-     display: block;
-     background-size: cover;
-}
+
  .pro-menu{
      background: #2f4f73;
      box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.08);
@@ -2663,13 +2657,7 @@
  .in2-dropdown-content li a:hover{
      background:#013673;
 }
- .in2-ban{
-     margin-top: 72px;
-     background: url(../images/pro-bg.jpg) no-repeat center center #333;
-     padding: 80px 0px;
-     background-size: cover;
-     position: relative;
-}
+
  .in2-ban:before {
      content: '';
      position: absolute;

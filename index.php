@@ -188,7 +188,6 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
         <div class="search-top">
             <div class="container">
                 <div class="row">
@@ -222,8 +221,7 @@
                 </div>
             </div>
         </div>
-=======
->>>>>>> 9f1251f03b66708e92af46e98599f16e49e564d2
+
     </section>
     <!--END HEADER SECTION-->
 

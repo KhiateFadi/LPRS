@@ -108,6 +108,7 @@
                                 <?php }
                                 if(isset($_SESSION)){?>
                                     <li><a href="main/HTML/vue/profile.php"><span>Mon compte</span></a></li>
+                                    <li><a href="main/HTML/vue/deconnexion.php"><span>Deconnexion</span></a></li>
                               <?php }
                               elseif ($_SESSION ['role'] == 1)
                               {?>
@@ -117,8 +118,8 @@
                         </div>
 
                     </div>
-                </div>
-            </div>
+                  </div>
+              </div>
         </div>
 
         <!-- LOGO AND MENU SECTION -->
@@ -188,38 +189,6 @@
                 </div>
             </div>
         </div>
-        <div class="search-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="search-form">
-                            <form>
-                                <div class="sf-type">
-                                    <div class="sf-input">
-                                        <input type="text" id="sf-box" placeholder="Search course and discount courses">
-                                    </div>
-                                    <div class="sf-list">
-                                        <ul>
-                                          <li><a href="main/HTML/vue/all-courses.html">TROISIÈME PRÉPA PRO</a></li>
-                                          <li><a href="main/HTML/vue/all-courses.html">BAC PRO TU</a></li>
-                                          <li><a href="main/HTML/vue/all-courses.html">BAC PRO MEI</a></li>
-                                          <li><a href="main/HTML/vue/admission.html">BAC PRO SN</a></li>
-                                          <li><a href="main/HTML/vue/awards.php">FORMATION SST</a></li>
-                                          <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
-                                          <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
-                                          <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
-                                          <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="sf-submit">
-                                    <input type="submit" value="Search Course">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
     </section>
@@ -307,16 +276,18 @@
                         <p>Tramway T11: arrêt Dugny-La Courneuve </p>
                     </ul>
                 </div>
-                <div class="row wed-foot-link-1">
-                    <div class="col-md-4 foot-tc-mar-t-o">
+
+                    <div class="col-md-4">
                         <h4>Contact</h4>
+                        <ul>
                         <p>Adresse : 5 Avenue du Général de Gaulle, 93440 Dugny</p>
                         <p>Téléphone : 01 48 37 74 26</a></p>
                         <p>Email: <a href="#!">administration@lyceerobertschuman.com</a></p>
+                      </ul>
                     </div>
 
 
-                </div>
+
             </div>
         </div>
     </section>
@@ -372,7 +343,7 @@
                                 <input type="submit" value="Login" class="waves-effect waves-light log-in-btn"> </div>
                         </div>
                         <div>
-                            <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal3">Mot de passe oublier</a> | <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Create a new account</a> </div>
+                            <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal3">Mot de passe oublier</a> | <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Crée un nouveau compte </a> </div>
                         </div>
                     </form>
                 </div>
@@ -383,51 +354,41 @@
             <div class="log-in-pop">
                 <div class="log-in-pop-left">
                     <h1>Bonjour</h1>
-                    <p>Don't have an account? Create your account. It's take less then a minutes</p>
-                    <h4>Login with social media</h4>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-google"></i> Google+</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a>
-                        </li>
-                    </ul>
+                    <p>Vous ne possedez pas de compte? N'hesitez pas sa prend 2 minute </p>
                 </div>
                 <div class="log-in-pop-right">
                     <a href="#" class="pop-close" data-dismiss="modal"><img src="main/HTML/images/cancel.png" alt="" />
                     </a>
-                    <h4>Create an Account</h4>
-                    <p>Don't have an account? Create your account. It's take less then a minutes</p>
+                    <h4>Crée un nouveau compte </h4>
                     <form action="main/HTML/traitement/inscription-traitement.php" method="POST" class="s12">
                         <div>
                             <div class="input-field s12">
                                 <input type="text" name="nom"  data-ng-model="name1" class="validate">
-                                <label>Last name</label>
+                                <label>nom</label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s12">
                                 <input type="text" name="prenom"  data-ng-model="name1" class="validate">
-                                <label>First name</label>
+                                <label>prenom</label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s12">
                                 <input type="email" name="mail" class="validate">
-                                <label>Email id</label>
+                                <label>Email</label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s12">
                                 <input type="password" name="mdp" class="validate">
-                                <label>Password</label>
+                                <label>mot de passe</label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s12">
                                 <input type="password" name="mdp" class="validate">
-                                <label>Confirm password</label>
+                                <label>Confirme le mot de passe </label>
                             </div>
                         </div>
                         <div>
@@ -435,7 +396,7 @@
                                 <input type="submit" value="Register" class="waves-effect waves-light log-in-btn"> </div>
                         </div>
                         <div>
-                            <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Are you a already member ? Login</a> </div>
+                            <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Déja membre ? Connexion </a> </div>
                         </div>
                     </form>
                 </div>
@@ -443,30 +404,17 @@
         </div>
         <!-- FORGOT SECTION -->
         <div id="modal3" class="modal fade" role="dialog">
-            <div class="log-in-pop">
-                <div class="log-in-pop-left">
-                    <h1>Hello... </h1>
-                    <p>Don't have an account? Create your account. It's take less then a minutes</p>
-                    <h4>Login with social media</h4>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-google"></i> Google+</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a>
-                        </li>
-                    </ul>
-                </div>
+
                 <div class="log-in-pop-right">
                     <a href="#" class="pop-close" data-dismiss="modal"><img src="main/HTML/images/cancel.png" alt="" />
                     </a>
-                    <h4>Forgot password</h4>
-                    <p>Don't have an account? Create your account. It's take less then a minutes</p>
+                    <h4>Mot de passe oublier </h4>
+
                     <form class="s12">
                         <div>
                             <div class="input-field s12">
                                 <input type="text" data-ng-model="name3" class="validate">
-                                <label>User name or email id</label>
+                                <label>Nom ou mail </label>
                             </div>
                         </div>
                         <div>
@@ -474,7 +422,7 @@
                                 <input type="submit" value="Submit" class="waves-effect waves-light log-in-btn"> </div>
                         </div>
                         <div>
-                            <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Are you a already member ? Login</a> | <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Create a new account</a> </div>
+                            <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Déja membre? Login</a> | <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Crée un compte </a> </div>
                         </div>
                     </form>
                 </div>

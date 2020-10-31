@@ -12,7 +12,7 @@ public function connexion($con){
   var_dump($con);
   if ($c == true) {
     $_SESSION['id'] = $c['id'];
-     header('Location: ../index.html');
+     header('Location: ../index.php');
   }
   else {
     echo "Mauvais login veuillez réessayer !";
@@ -30,13 +30,13 @@ public function connexion($con){
 if ($b == true) {
             $_SESSION['id'] = $b['id'];
 
-            header('Location: ../index.html');
+            header('Location: ../index.php');
 
 
           }
           else {
            echo "Mauvais login veuillez réessayer !";
-           header('Location:../index.html');
+           header('Location:../index.php');
           }
     }
 
@@ -70,13 +70,13 @@ if ($b == true) {
           if ($b == true) {
                   //  $_SESSION['id'] = $b['id'];
 
-                    header('Location: ../index.html');
+                    header('Location: ../index.php');
 
 
                   }
                   else {
                    echo "Mauvais login veuillez réessayer !";
-                  header('Location:../index.html');
+                  header('Location:../index.php');
                   }
             }
 
@@ -99,6 +99,17 @@ $c = $red->fetch();
 return $c;
 
 }
+
+
+
+public function reservation($k){
+        $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+
+        $req = $bdd->prepare('INSERT INTO contact(nom, message, mail) VALUES(:nom, :message, :mail)');
+        $a = $req->execute(array('nom'=>$k->getNom(),'message'=>$k->getMessage(),
+        'mail'=>$k->getMail()));
+        header('Location:../../../index.php');
+    }
 
 
 

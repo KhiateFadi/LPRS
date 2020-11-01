@@ -50,15 +50,15 @@
                             <a href="#!" class="ed-mi-close"><i class="fa fa-times"></i></a>
                             <h4>Formation</h4>
                             <ul>
-                              <li><a href="main/HTML/vue/all-courses.html">TROISIÈME PRÉPA PRO</a></li>
-                              <li><a href="main/HTML/vue/all-courses.html">BAC PRO TU</a></li>
-                              <li><a href="main/HTML/vue/all-courses.html">BAC PRO MEI</a></li>
-                              <li><a href="main/HTML/vue/admission.html">BAC PRO SN</a></li>
-                              <li><a href="main/HTML/vue/awards.php">FORMATION SST</a></li>
-                              <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
-                              <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
-                              <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
-                              <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
+                              <li><a href="main/HTML/vue/troisieme-prepa.html">TROISIÈME PRÉPA PRO</a></li>
+                              <li><a href="main/HTML/vue/bac-pro-tu.html">BAC PRO TU</a></li>
+                              <li><a href="main/HTML/vue/bac-pro-mei.html">BAC PRO MEI</a></li>
+                              <li><a href="main/HTML/vue/bac-pro-sn.html">BAC PRO SN</a></li>
+                              <li><a href="main/HTML/vue/formation-sst.html">FORMATION SST</a></li>
+                              <li><a href="main/HTML/vue/bac-sti2d.html">BAC STI2D</a></li>
+                              <li><a href="main/HTML/vue/bts-cprp.html">BTS CPRP</a></li>
+                              <li><a href="main/HTML/vue/bts-sio-sisr.html">BTS SIO – OPTION SISR</a></li>
+                              <li><a href="main/HTML/vue/bts-sio-slam.html">BTS SIO – OPTION SLAM</a></li>
                             </ul>
                             <h4>Compte</h4>
                             <ul>
@@ -152,20 +152,19 @@
 
                                                 <div class="mm1-com mm1-s3">
                                                     <ul>
-                                                        <li><a href="main/HTML/vue/all-courses.html">TROISIÈME PRÉPA PRO</a></li>
-                                                        <li><a href="main/HTML/vue/all-courses.html">BAC PRO TU</a></li>
-                                                        <li><a href="main/HTML/vue/all-courses.html">BAC PRO MEI</a></li>
-                                                        <li><a href="main/HTML/vue/admission.html">BAC PRO SN</a></li>
-                                                        <li><a href="main/HTML/vue/awards.php">FORMATION SST</a></li>
+                                                      <li><a href="main/HTML/vue/troisieme-prepa.html">TROISIÈME PRÉPA PRO</a></li>
+                                                      <li><a href="main/HTML/vue/bac-pro-tu.html">BAC PRO TU</a></li>
+                                                      <li><a href="main/HTML/vue/bac-pro-mei.html">BAC PRO MEI</a></li>
+                                                      <li><a href="main/HTML/vue/bac-pro-sn.html">BAC PRO SN</a></li>
+                                                      <li><a href="main/HTML/vue/formation-sst.html">FORMATION SST</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="mm1-com mm1-s4">
                                                     <ul>
-                                                        <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
-                                                        <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
-                                                        <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
-                                                        <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
-
+                                                      <li><a href="main/HTML/vue/bac-sti2d.html">BAC STI2D</a></li>
+                                                      <li><a href="main/HTML/vue/bts-cprp.html">BTS CPRP</a></li>
+                                                      <li><a href="main/HTML/vue/bts-sio-sisr.html">BTS SIO – OPTION SISR</a></li>
+                                                      <li><a href="main/HTML/vue/bts-sio-slam.html">BTS SIO – OPTION SLAM</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -257,15 +256,15 @@
                 <div class="col-md-4 foot-tc-mar-t-o">
                     <h4>Formation</h4>
                     <ul>
-                      <li><a href="main/HTML/vue/all-courses.html">TROISIÈME PRÉPA PRO</a></li>
-                      <li><a href="main/HTML/vue/all-courses.html">BAC PRO TU</a></li>
-                      <li><a href="main/HTML/vue/all-courses.html">BAC PRO MEI</a></li>
-                      <li><a href="main/HTML/vue/admission.html">BAC PRO SN</a></li>
-                      <li><a href="main/HTML/vue/awards.php">FORMATION SST</a></li>
-                      <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
-                      <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
-                      <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
-                      <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
+                      <li><a href="main/HTML/vue/troisieme-prepa.html">TROISIÈME PRÉPA PRO</a></li>
+                      <li><a href="main/HTML/vue/bac-pro-tu.html">BAC PRO TU</a></li>
+                      <li><a href="main/HTML/vue/bac-pro-mei.html">BAC PRO MEI</a></li>
+                      <li><a href="main/HTML/vue/bac-pro-sn.html">BAC PRO SN</a></li>
+                      <li><a href="main/HTML/vue/formation-sst.html">FORMATION SST</a></li>
+                      <li><a href="main/HTML/vue/bac-sti2d.html">BAC STI2D</a></li>
+                      <li><a href="main/HTML/vue/bts-cprp.html">BTS CPRP</a></li>
+                      <li><a href="main/HTML/vue/bts-sio-sisr.html">BTS SIO – OPTION SISR</a></li>
+                      <li><a href="main/HTML/vue/bts-sio-slam.html">BTS SIO – OPTION SLAM</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">

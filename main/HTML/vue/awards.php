@@ -217,8 +217,8 @@ require_once('../manager/manager.php');
 
                     <div class="ed-about-tit">
                         <div class="con-title">
-                            <h2>History and <span> Awards</span></h2>
-                            <p>Fusce id sem at ligula laoreet hendrerit venenatis sed purus. Ut pellentesque maximus lacus, nec pharetra augue.</p>
+                            <h2>Offres alternances</h2>
+                            <p>Vous trouverez ci dessous de nombreuses offres d'alternances </p>
                         </div>
                     </div>
                     <div class="s18-age-event l-info-pack-days">
@@ -228,69 +228,83 @@ require_once('../manager/manager.php');
                                     <img src="images/icon/awa/1.png" alt="">
                                 </div>
                                 <div class="s17-eve-time">
-                                    <div class="s17-eve-time-tim">
-                                        <span>21 May 1966</span>
-                                    </div>
+
                                     <?php
 
                                     $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
-                                    $tab_requête = ['SELECT nom FROM evenement'];
-                                    for ($i=0; $i <1; $i++) {
-                                      $red = $bdd->query($tab_requête[$i]);
-                                      $tableau =  $red->fetchall();
+                                    $tab_requête = 'SELECT nom FROM evenement';
+                                    $red = $bdd->query($tab_requête);
+                                    $tableau =  $red->fetchall();
 
-
-                                      }
-
-
-
-
-
-
-                                    for ($i=0; $i < count($tableau) ; $i++) {
-                                      foreach (array_unique($tableau[$i]) as $key => $value) {
-                                       echo $key.':'.$value;
-                                      }
-                                    }
                                   ?>
 
+                                  <?php
+
+                                  $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+                                  $tab_requête = 'SELECT description FROM evenement';
+                                  $red = $bdd->query($tab_requête);
+                                  $tab =  $red->fetchall();
+
+                                ?>
 
 
 
+                                <?php
 
-                                    <div class="s17-eve-time-msg">
+                                $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+                                $tab_requête = 'SELECT duree FROM evenement';
+                                $red = $bdd->query($tab_requête);
+                                $tab1 =  $red->fetchall();
 
-                                    </div>
+                                ?>
+
+
+                                <div class="s17-eve-time-tim">
+                                    <?php echo $tab1[0][0] ." mois";?>
                                 </div>
-                            </li>
+
+
+                <!-- description du nom de l'entreprise de l'offre -->                        <div class="s17-eve-time-msg">
+                                        <?php echo $tableau[0][0]; ?>
+
+                                      </div>
+
+
+
+
+
+
+        <!-- description de l'offre d'alternance -->                              <div class="time-hide time-hide-2">
+
+<?php echo $tab[0][0]; ?>
+
+
+                                      </div>
+
+
+                                      <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
+                                      <i class="fa fa-angle-down"></i>
+                                      </a>
+                                      <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
+                                      <i class="fa fa-angle-up"></i>
+
+                                      </a>
+
+
+
+                                                            </li>
                             <li>
                                 <div class="age-eve-com age-eve-1">
                                     <img src="images/icon/awa/2.png" alt="">
                                 </div>
                                 <div class="s17-eve-time">
                                     <div class="s17-eve-time-tim">
-                                        <span>09:00AM - 10:30AM</span>
+                                        <?php echo $tab1[0][0]; " mois"?>
                                     </div>
                                     <div class="s17-eve-time-msg">
-                                        <h4>Academy Leadership</h4>
-                                        <p>Praesent ac velit non eros maximus porta in suscipit elit. Aenean viverra lorem quis mattis accumsan. Etiam facilisis magna ut diam pulvinar condimentum.</p>
-                                        <div class="time-hide time-hide-1">
-                                            <h5>Leadership</h5>
-                                            <p> Nulla mattis, ipsum cursus scelerisque pretium, nisl nisl elementum tellus, a facilisis turpis tellus sit amet massa. Donec ipsum ipsum, rhoncus sit amet arcu in, hendrerit placerat libero. Morbi sit amet sodales
-                                                sapien. Ut vulputate nec mi non blandit.</p>
-                                            <h5>Leadership</h5>
-                                            <p> Nulla mattis, ipsum cursus scelerisque pretium, nisl nisl elementum tellus, a facilisis turpis tellus sit amet massa. Donec ipsum ipsum, rhoncus sit amet arcu in, hendrerit placerat libero. Morbi sit amet sodales
-                                                sapien. Ut vulputate nec mi non blandit.</p>
-                                            <h5>Leadership</h5>
-                                            <p> Nulla mattis, ipsum cursus scelerisque pretium, nisl nisl elementum tellus, a facilisis turpis tellus sit amet massa. Donec ipsum ipsum, rhoncus sit amet arcu in, hendrerit placerat libero. Morbi sit amet sodales
-                                                sapien. Ut vulputate nec mi non blandit.</p>
-                                        </div>
-                                        <a href="#!" class="s17-sprit age-dwarr-btn time-hide-1-btn">
-										<i class="fa fa-angle-down"></i>
-									</a>
-                                        <a href="#!" class="s17-sprit age-dwarr-btn time-hide-11-btn hb-com">
-										<i class="fa fa-angle-up"></i>
-									</a>
+
+
+
                                     </div>
                                 </div>
                             </li>

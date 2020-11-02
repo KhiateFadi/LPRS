@@ -254,7 +254,7 @@
 			  </div>
 			  </div>-->
             <div class="row wed-foot-link">
-                <div class="col-md-4 foot-tc-mar-t-o">
+                <div class="col-md-4 ">
                     <h4>Formation</h4>
                     <ul>
                       <li><a href="main/HTML/vue/troisieme-prepa.html">TROISIÈME PRÉPA PRO</a></li>

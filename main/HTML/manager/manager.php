@@ -12,11 +12,11 @@ public function connexion($con){
   var_dump($con);
   if ($c == true) {
     $_SESSION['id'] = $c['id'];
-     header('Location: ../index.php');
+     header('Location: ../vue/db-profile.php');
   }
   else {
     echo "Mauvais login veuillez réessayer !";
-     header('Location:../indexx.html');
+     header('Location:../../../indexx.html');
   }
 
   }
@@ -29,14 +29,13 @@ public function connexion($con){
           $b = $req->fetch();
 if ($b == true) {
             $_SESSION['id'] = $b['id'];
-
-            header('Location: ../index.php');
+            header('Location: ../../../index.php');
 
 
           }
           else {
            echo "Mauvais login veuillez réessayer !";
-           header('Location:../index.php');
+           header('Location:../../../index.php');
           }
     }
 
@@ -54,7 +53,7 @@ if ($b == true) {
     	        ));
 
 
-    	           header('Location: ../vue/db-profils.php');
+    	           header('Location: ../vue/db-profile.php');
     	    }
 
 

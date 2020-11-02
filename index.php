@@ -313,7 +313,7 @@
                     <p>Vous ne possedez pas de compte? N'hesitez pas sa prend 2 minute </p>
                 </div>
                 <div class="log-in-pop-right">
-                    <a href="#" class="pop-close" data-dismiss="modal"><img src="main/HTML/images/cancel.png" alt="" />
+                    <a href="#" class="pop-close" data-dismiss="modal"><img src="" alt="" />
                     </a>
                     <h4>Bonjour ! </h4>
                     <p>Vous ne possedez pas de compte? N'hesitez pas sa prend 2 minute </p>
@@ -357,7 +357,7 @@
                     <p>Vous ne possedez pas de compte? N'hesitez pas sa prend 2 minute </p>
                 </div>
                 <div class="log-in-pop-right">
-                    <a href="#" class="pop-close" data-dismiss="modal"><img src="main/HTML/images/cancel.png" alt="" />
+                    <a href="#" class="pop-close" data-dismiss="modal"><img src="" alt="" />
                     </a>
                     <h4>Crée un nouveau compte </h4>
                     <form action="main/HTML/traitement/inscription-traitement.php" method="POST" class="s12">
@@ -406,7 +406,7 @@
         <div id="modal3" class="modal fade" role="dialog">
 
                 <div class="log-in-pop-right">
-                    <a href="#" class="pop-close" data-dismiss="modal"><img src="main/HTML/images/cancel.png" alt="" />
+                    <a href="#" class="pop-close" data-dismiss="modal"><img src="" alt="" />
                     </a>
                     <h4>Mot de passe oublier </h4>
 

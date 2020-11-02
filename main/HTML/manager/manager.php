@@ -12,7 +12,7 @@ public function connexion($con){
   var_dump($con);
   if ($c == true) {
     $_SESSION['id'] = $c['id'];
-     header('Location: ../../../index.php');
+     header('Location: ../vue/db-profile.php');
   }
   else {
     echo "Mauvais login veuillez réessayer !";
@@ -53,7 +53,7 @@ if ($b == true) {
     	        ));
 
 
-    	           header('Location: ../vue/db-profils.php');
+    	           header('Location: ../vue/db-profile.php');
     	    }
 
 

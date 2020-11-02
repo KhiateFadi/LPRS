@@ -618,7 +618,7 @@ require_once('../manager/manager.php');
                     </div>
 
 
-              
+
             </div>
         </div>
     </section>

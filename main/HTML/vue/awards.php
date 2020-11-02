@@ -609,7 +609,7 @@ require_once('../manager/manager.php');
                         <p>Tramway T11: arrêt Dugny-La Courneuve </p>
                     </ul>
                 </div>
-                <div class="row wed-foot-link-1">
+
                     <div class="col-md-4 foot-tc-mar-t-o">
                         <h4>Contact</h4>
                         <p>Adresse : 5 Avenue du Général de Gaulle, 93440 Dugny</p>
@@ -618,7 +618,7 @@ require_once('../manager/manager.php');
                     </div>
 
 
-                </div>
+              
             </div>
         </div>
     </section>
@@ -634,7 +634,7 @@ require_once('../manager/manager.php');
         </div>
     </section>
     <!--END HEADER SECTION-->
-    
+
     <!--SECTION LOGIN, REGISTER AND FORGOT PASSWORD-->
     <section>
         <!-- LOGIN SECTION -->

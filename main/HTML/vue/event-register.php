@@ -1,11 +1,8 @@
-<<?php
-session_start();
- require('../manager/manager.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Education Master Template</title>
+    <title>Lycée Robert Schuman</title>
     <!-- META TAGS -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,67 +31,66 @@ session_start();
 
 <body>
 
-<?php include('header.php'); ?>
+    <!-- MOBILE MENU -->
+    <?php include('header.php'); ?>
     <!--END HEADER SECTION-->
 
 
     <!--SECTION START-->
-    <section>
-
-        <div class="pro-menu">
-            <div class="container">
-                <div class="col-md-9 col-md-offset-3">
-                    <ul>
-                        <li><a href="dashboard.php">My Dashboard</a></li>
-                        <li><a href="db-profile.php" class="pro-act">Profile</a></li>
-                        <li><a href="#">Notifications</a></li>
-                    </ul>
+    <section class="c-all p-semi p-event">
+        <div class="semi-inn">
+            <div class="semi-com semi-left">
+                <div class="all-title quote-title qu-new semi-text eve-reg-text">
+                    <h2>College Expo</h2>
+                    <p>Fusce purus mauris, blandit vitae purus eget, viverra volutpat nibh. Nam in elementum nisi, a placerat nisi. Quisque ullamcorper magna in odio rhoncus semper.Sed nec ultricies velit. Aliquam non massa id enim ultrices aliquet a ac
+                        tortor.</p>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <div class="semi-deta eve-deta">
+                        <ul>
+                            <li>DATE:<span>Jan 01, 2018</span></li>
+                            <li>Time:<span>02:00 PM GMT</span></li>
+                            <li>Topic:<span>Feature Technology</span></li>
+                            <li>Location:<span>illinois, united states</span></li>
+                        </ul>
+                    </div>
+                    <p class="help-line">Join this for free!</p>
                 </div>
             </div>
-        </div>
-        <div class="stu-db">
-            <div class="container pg-inn">
-                <div class="col-md-9">
-                    <div class="udb">
-                            <div class="sdb-tabl-com sdb-pro-table">
-                                <table class="responsive-table bordered">
-                                    <tbody>
-                                      <h5 class="card-title">Mon Compte</h5>
-                    <div class="text">
-                    <p class="card-text"><div class="nom">
-                    <?php
-                    $a = new Manager();
-                    $c = $a->afficheUser($_SESSION['id']);
-
-                    //echo $value;
-                    echo 'Votre nom :'.' '.$c['nom']; ?>
-
-                </div>
-                <div class="prenom">
-                    <?php echo 'Votre prénom :'.' '.$c['prenom']; ?>
-
-                </div>
-
-
-                <div class="login">
-                    <?php echo 'Votre mail :'.' '.$c['mail']; ?>
-
-                </div>
-                <div class="mdp">
-                    <?php echo 'Votre MDP crypté :'.' '.$c['mdp']; ?>
-
-                </div></p>
-                </div>
-                </div>
-                </div>
-            </div>
-                                    </tbody>
-                                </table>
-                                <div class="sdb-bot-edit">
-                                    <a href="db-profile-bis.php" class="waves-effect waves-light btn-large sdb-btn sdb-btn-edit"><i class="fa fa-pencil"></i> Edit my profile</a>
+            <div class="semi-com semi-right">
+                <div class="n-form-com semi-form">
+                    <div class="col s12">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" placeholder="Name" required>
                                 </div>
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input type="number" class="form-control" placeholder="Phone number" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input type="email" class="form-control" placeholder="Email id" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" placeholder="City">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" placeholder="Country">
+                                </div>
+                            </div>
+                            <div class="form-group mar-bot-0">
+                                <div class="col-md-12">
+                                    <i class="waves-effect waves-light light-btn waves-input-wrapper" style=""><input type="submit" value="APPLY NOW" class="waves-button-input"></i>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -103,7 +99,27 @@ session_start();
     <!--SECTION END-->
 
 
-
+    <!--SECTION START-->
+    <section>
+        <div class="full-bot-book">
+            <div class="container">
+                <div class="row">
+                    <div class="bot-book">
+                        <div class="col-md-2 bb-img">
+                            <img src="images/3.png" alt="">
+                        </div>
+                        <div class="col-md-7 bb-text">
+                            <h4>therefore always free from repetition</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                        </div>
+                        <div class="col-md-3 bb-link">
+                            <a href="course-details.php">Book This Course</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--SECTION END-->
 
     <!--HEADER SECTION-->
@@ -118,65 +134,95 @@ session_start();
 				<p></p>
 			  </div>
 			  </div>-->
-        <!-- FOOTER -->
-        <section class="wed-hom-footer">
-            <div class="container">
-                <!--<div class="row">
-            <div class="col-md-12">
-            <h4>About Wedding Planner</h4>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum</p>
-            <p>more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</p>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-            <p></p>
-            </div>
-            </div>-->
-                <div class="row wed-foot-link">
-                    <div class="col-md-4 foot-tc-mar-t-o">
-                        <h4>Formation</h4>
-                        <ul>
-                          <li><a href="main/HTML/vue/all-courses.php">TROISIÈME PRÉPA PRO</a></li>
-                          <li><a href="main/HTML/vue/all-courses.php">BAC PRO TU</a></li>
-                          <li><a href="main/HTML/vue/all-courses.php">BAC PRO MEI</a></li>
-                          <li><a href="main/HTML/vue/admission.php">BAC PRO SN</a></li>
-                          <li><a href="main/HTML/vue/awards.php">FORMATION SST</a></li>
-                          <li><a href="main/HTML/vue/dashboard.php">BAC STI2D</a></li>
-                          <li><a href="main/HTML/vue/db-courses.php">BTS CPRP</a></li>
-                          <li><a href="main/HTML/vue/db-exams.php">BTS SIO – OPTION SISR</a></li>
-                          <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Accès</h4>
-                        <ul>
-                            <p>RER B (Le Bourget) et Bus 133 (Albert Chardavoine)</p>
-                            <p>RER B (La Courneuve) et Bus 249 (Albert Chardavoine) </p>
-                            <p>Tramway T11: arrêt Dugny-La Courneuve </p>
-                        </ul>
-                    </div>
-                    <div class="row wed-foot-link-1">
-                        <div class="col-md-4 foot-tc-mar-t-o">
-                            <h4>Contact</h4>
-                            <p>Adresse : 5 Avenue du Général de Gaulle, 93440 Dugny</p>
-                            <p>Téléphone : 01 48 37 74 26</a></p>
-                            <p>Email: <a href="#!">administration@lyceerobertschuman.com</a></p>
-                        </div>
-
-
-                    </div>
+            <div class="row wed-foot-link">
+                <div class="col-md-4 foot-tc-mar-t-o">
+                    <h4>Top Courses</h4>
+                    <ul>
+                        <li><a href="course-details.php">Accounting/Finance</a></li>
+                        <li><a href="course-details.php">civil engineering</a></li>
+                        <li><a href="course-details.php">Art/Design</a></li>
+                        <li><a href="course-details.php">Marine Engineering</a></li>
+                        <li><a href="course-details.php">Business Management</a></li>
+                        <li><a href="course-details.php">Journalism/Writing</a></li>
+                        <li><a href="course-details.php">Physical Education</a></li>
+                        <li><a href="course-details.php">Political Science</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>New Courses</h4>
+                    <ul>
+                        <li><a href="course-details.php">Sciences</a></li>
+                        <li><a href="course-details.php">Statistics</a></li>
+                        <li><a href="course-details.php">Web Design/Development</a></li>
+                        <li><a href="course-details.php">SEO</a></li>
+                        <li><a href="course-details.php">Google Business</a></li>
+                        <li><a href="course-details.php">Graphics Design</a></li>
+                        <li><a href="course-details.php">Networking Courses</a></li>
+                        <li><a href="course-details.php">Information technology</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>HELP & SUPPORT</h4>
+                    <ul>
+                        <li><a href="#">24x7 Live help</a>
+                        </li>
+                        <li><a href="#">Contact us</a>
+                        </li>
+                        <li><a href="#">Feedback</a>
+                        </li>
+                        <li><a href="#">FAQs</a>
+                        </li>
+                        <li><a href="#">Safety Tips</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-
-        <!-- COPY RIGHTS -->
-        <section class="wed-rights">
-            <div class="container">
-                <div class="row">
-                    <div class="copy-right">
-                        <p>Copyrights © 2021 RN53Themes. Tous droits réservés.</p>
-                    </div>
+            <div class="row wed-foot-link-1">
+                <div class="col-md-4 foot-tc-mar-t-o">
+                    <h4>Get In Touch</h4>
+                    <p>Address: 28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</p>
+                    <p>Phone: <a href="#!">+101-1231-4321</a></p>
+                    <p>Email: <a href="#!">info@educationmaster.com</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h4>DOWNLOAD OUR FREE MOBILE APPS</h4>
+                    <ul>
+                        <li><a href="#"><span class="sprite sprite-android"></span></a>
+                        </li>
+                        <li><a href="#"><span class="sprite sprite-ios"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>SOCIAL MEDIA</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <!--END HEADER SECTION-->
+
+    <!--HEADER SECTION-->
+    <section class="wed-rights">
+        <div class="container">
+            <div class="row">
+                <div class="copy-right">
+                    <p>Copyrights © 2018 RN53Themes. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--END HEADER SECTION-->
 
     <!--SECTION LOGIN, REGISTER AND FORGOT PASSWORD-->
@@ -332,7 +378,19 @@ session_start();
         </div>
     </section>
 
-
+    <section>
+        <div class="icon-float">
+            <ul>
+                <li><a href="#" class="sh">1k <br> Share</a> </li>
+                <li><a href="#" class="fb1"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                <li><a href="#" class="gp1"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
+                <li><a href="#" class="tw1"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+                <li><a href="#" class="li1"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+                <li><a href="#" class="wa1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
+                <li><a href="#" class="sh1"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </li>
+            </ul>
+        </div>
+    </section>
 
     <!--Import jQuery before materialize.js-->
     <script src="../js/main.min.js"></script>

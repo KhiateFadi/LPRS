@@ -31,177 +31,7 @@
 
 <body>
 
-  <section>
-      <div class="ed-mob-menu">
-          <div class="ed-mob-menu-con">
-              <div class="ed-mm-left">
-                  <div class="wed-logo">
-                    <img style="width:50px;height:50px;" src="main/HTML/images/logo.png" alt="" />
-
-                  </div>
-              </div>
-              <div class="ed-mm-right">
-                  <div class="ed-mm-menu">
-                      <a href="#!" class="ed-micon"><i class="fa fa-bars"></i></a>
-                      <div class="ed-mm-inn">
-                          <a href="#!" class="ed-mi-close"><i class="fa fa-times"></i></a>
-                          <h4>Formation</h4>
-                          <ul>
-                            <li><a href="troisieme-prepa.html">TROISIÈME PRÉPA PRO</a></li>
-                            <li><a href="bac-pro-tu.html">BAC PRO TU</a></li>
-                            <li><a href="bac-pro-mei.html">BAC PRO MEI</a></li>
-                            <li><a href="bac-pro-sn.html">BAC PRO SN</a></li>
-                            <li><a href="formation-sst.html">FORMATION SST</a></li>
-                            <li><a href="bac-sti2d.html">BAC STI2D</a></li>
-                            <li><a href="bts-cprp.html">BTS CPRP</a></li>
-                            <li><a href="bts-sio-sisr.html">BTS SIO – OPTION SISR</a></li>
-                            <li><a href="bts-sio-slam.html">BTS SIO – OPTION SLAM</a></li>
-                          </ul>
-                          <h4>Compte</h4>
-                          <ul>
-                              <li><a href="#!" data-toggle="modal" data-target="#modal1">Connexion</a></li>
-                              <li><a href="#!" data-toggle="modal" data-target="#modal2">Inscription</a></li>
-                          </ul>
-                          <h4>All Pages</h4>
-                          <ul>
-                              <li><a href="../../../index.php">Accueil</a></li>
-                              <li><a href="main/HTML/vue/all-courses.html">Formation</a></li>
-                              <li><a href="main/HTML/vue/awards.php">Relation entreprise</a></li>
-                              <li><a href="main/HTML/vue/contact-us.html">Contact</a></li>
-
-                          </ul>
-
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-    <!--HEADER SECTION-->
-    <section>
-        <!-- TOP BAR -->
-        <div class="ed-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="ed-com-t1-left">
-                            <ul>
-                                <li><a href="#">LYCÉE PRIVÉ ET UFA - ROBERT SCHUMAN - Enseignement catholique sous contrat avec l'état</a>
-                                </li>
-                                <li><a href="#">Tél: 01 48 37 74 26</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="ed-com-t1-right">
-                            <ul>
-                                <li><a href="#!" data-toggle="modal" data-target="#modal1">Connexion</a>
-                                </li>
-                                <li><a href="#!" data-toggle="modal" data-target="#modal2">Inscription</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- LOGO AND MENU SECTION -->
-        <div class="top-logo" data-spy="affix" data-offset-top="250">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="wed-logo">
-                            <a href="../../../index.php"><img style="margin-left:60px;width:90px;height:90px;margin-top:-9px;" src="../images/logo.png" alt="" />
-                            </a>
-                        </div>
-                        <div class="main-menu">
-                            <ul>
-                                <li><a href="../../../index.php">Accueil</a>
-                                </li>
-                                <li class="about-menu">
-                                    <a href="all-courses.html" class="mm-arr">Formation</a>
-                                    <!-- MEGA MENU 1 -->
-                                    <div class="mm-pos">
-                                        <div class="about-mm m-menu">
-                                            <div class="m-menu-inn">
-                                                <div class="mm1-com mm1-s1">
-                                                    <div class="ed-course-in">
-                                                        <a class="course-overlay menu-about" href="main/HTML/vue/admission.html">
-                                                            <img src="../images/site/Formation.jpg" alt="">
-                                                            <span>Formation</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-
-                                                <div class="mm1-com mm1-s3">
-                                                    <ul>
-                                                      <li><a href="troisieme-prepa.html">TROISIÈME PRÉPA PRO</a></li>
-                                                      <li><a href="bac-pro-tu.html">BAC PRO TU</a></li>
-                                                      <li><a href="bac-pro-mei.html">BAC PRO MEI</a></li>
-                                                      <li><a href="bac-pro-sn.html">BAC PRO SN</a></li>
-                                                      <li><a href="formation-sst.html">FORMATION SST</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="mm1-com mm1-s4">
-                                                    <ul>
-                                                      <li><a href="bac-sti2d.html">BAC STI2D</a></li>
-                                                      <li><a href="bts-cprp.html">BTS CPRP</a></li>
-                                                      <li><a href="bts-sio-sisr.html">BTS SIO – OPTION SISR</a></li>
-                                                      <li><a href="bts-sio-slam.html">BTS SIO – OPTION SLAM</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="admi-menu">
-                                    <a href="awards.php" class="mm-arr">Relation entreprise</a>
-                                    <!-- MEGA MENU 1 -->
-                                </li>
-                                <li><a href="contact-us.html">Contact</a></li>
-                                <!--<li><a class='dropdown-button ed-sub-menu' href='#' data-activates='dropdown1'>Courses</a></li>-->
-                                <li class="cour-menu"/>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="all-drop-down-menu">
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="search-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="search-form">
-                            <form>
-                                <div class="sf-type">
-
-                                    <div class="sf-list">
-                                        <ul>
-                                          <li><a href="troisieme-prepa.html">TROISIÈME PRÉPA PRO</a></li>
-                                          <li><a href="bac-pro-tu.html">BAC PRO TU</a></li>
-                                          <li><a href="bac-pro-mei.html">BAC PRO MEI</a></li>
-                                          <li><a href="bac-pro-sn.html">BAC PRO SN</a></li>
-                                          <li><a href="formation-sst.html">FORMATION SST</a></li>
-                                          <li><a href="bac-sti2d.html">BAC STI2D</a></li>
-                                          <li><a href="bts-cprp.html">BTS CPRP</a></li>
-                                          <li><a href="bts-sio-sisr.html">BTS SIO – OPTION SISR</a></li>
-                                          <li><a href="bts-sio-slam.html">BTS SIO – OPTION SLAM</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <?php include('header.php'); ?>
     <!--END HEADER SECTION-->
 
 
@@ -218,7 +48,7 @@
 									 <li>
 
                                         <div class="pg-eve-desc pg-blog-desc">
-                                            <a href="event-register.html">
+                                            <a href="event-register.php">
                                                 <h4>Formation SST</h4>
                                             </a>
 
@@ -257,15 +87,15 @@
                 <div class="col-md-4 foot-tc-mar-t-o">
                     <h4>Formation</h4>
                     <ul>
-                      <li><a href="troisieme-prepa.html">TROISIÈME PRÉPA PRO</a></li>
-                      <li><a href="bac-pro-tu.html">BAC PRO TU</a></li>
-                      <li><a href="bac-pro-mei.html">BAC PRO MEI</a></li>
-                      <li><a href="bac-pro-sn.html">BAC PRO SN</a></li>
-                      <li><a href="formation-sst.html">FORMATION SST</a></li>
-                      <li><a href="bac-sti2d.html">BAC STI2D</a></li>
-                      <li><a href="bts-cprp.html">BTS CPRP</a></li>
-                      <li><a href="bts-sio-sisr.html">BTS SIO – OPTION SISR</a></li>
-                      <li><a href="bts-sio-slam.html">BTS SIO – OPTION SLAM</a></li>
+                      <li><a href="troisieme-prepa.php">TROISIÈME PRÉPA PRO</a></li>
+                      <li><a href="bac-pro-tu.php">BAC PRO TU</a></li>
+                      <li><a href="bac-pro-mei.php">BAC PRO MEI</a></li>
+                      <li><a href="bac-pro-sn.php">BAC PRO SN</a></li>
+                      <li><a href="formation-sst.php">FORMATION SST</a></li>
+                      <li><a href="bac-sti2d.php">BAC STI2D</a></li>
+                      <li><a href="bts-cprp.php">BTS CPRP</a></li>
+                      <li><a href="bts-sio-sisr.php">BTS SIO – OPTION SISR</a></li>
+                      <li><a href="bts-sio-slam.php">BTS SIO – OPTION SLAM</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -284,7 +114,7 @@
                     </div>
 
 
-              
+
             </div>
         </div>
     </section>

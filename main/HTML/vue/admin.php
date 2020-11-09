@@ -50,9 +50,9 @@
             <!--== NOTIFICATION ==-->
             <div class="col-md-2 tab-hide">
                 <div class="top-not-cen">
-                    <a class='waves-effect btn-noti' href="admin-all-enquiry.html" title="all enquiry messages"><i class="fa fa-commenting-o" aria-hidden="true"></i><span>5</span></a>
-                    <a class='waves-effect btn-noti' href="admin-course-enquiry.html" title="course booking messages"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>5</span></a>
-                    <a class='waves-effect btn-noti' href="admin-admission-enquiry.html" title="admission enquiry"><i class="fa fa-tag" aria-hidden="true"></i><span>5</span></a>
+                    <a class='waves-effect btn-noti' href="admin-all-enquiry.php" title="all enquiry messages"><i class="fa fa-commenting-o" aria-hidden="true"></i><span>5</span></a>
+                    <a class='waves-effect btn-noti' href="admin-course-enquiry.php" title="course booking messages"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>5</span></a>
+                    <a class='waves-effect btn-noti' href="admin-admission-enquiry.php" title="admission enquiry"><i class="fa fa-tag" aria-hidden="true"></i><span>5</span></a>
                 </div>
             </div>
             <!--== MY ACCCOUNT ==-->
@@ -63,7 +63,7 @@
 
                 <!-- Dropdown Structure -->
                 <ul id='top-menu' class='dropdown-content top-menu-sty'>
-                    <li><a href="admin-panel-setting.html" class="waves-effect"><i class="fa fa-cogs" aria-hidden="true"></i>Admin Setting</a>
+                    <li><a href="admin-panel-setting.php" class="waves-effect"><i class="fa fa-cogs" aria-hidden="true"></i>Admin Setting</a>
                     </li>
                     <li class="divider"></li>
                     <li><a href="#" class="ho-dr-con-last waves-effect"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout</a>
@@ -82,16 +82,16 @@
                 <!--== LEFT MENU ==-->
                 <div class="sb2-13">
                     <ul class="collapsible" data-collapsible="accordion">
-                        <li><a href="admin.html" class="menu-active"><i class="fa fa-bar-chart" aria-hidden="true"></i> Dashboard</a>
+                        <li><a href="admin.php" class="menu-active"><i class="fa fa-bar-chart" aria-hidden="true"></i> Dashboard</a>
                         </li>
-						<li><a href="admin-setting.html"><i class="fa fa-cogs" aria-hidden="true"></i> Site Setting</a>
+						<li><a href="admin-setting.php"><i class="fa fa-cogs" aria-hidden="true"></i> Site Setting</a>
                         </li>
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-user" aria-hidden="true"></i> Users</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-user-all.html">All Users</a>
+                                    <li><a href="admin-user-all.php">All Users</a>
                                     </li>
-                                    <li><a href="admin-user-add.html">Add New user</a>
+                                    <li><a href="admin-user-add.php">Add New user</a>
                                     </li>
                                 </ul>
                             </div>
@@ -99,9 +99,9 @@
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-bookmark-o" aria-hidden="true"></i>All Pages</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-page-all.html">Pages</a>
+                                    <li><a href="admin-page-all.php">Pages</a>
                                     </li>
-                                    <li><a href="admin-page-add.html">Create New Page</a>
+                                    <li><a href="admin-page-add.php">Create New Page</a>
                                     </li>
                                 </ul>
                             </div>
@@ -109,23 +109,23 @@
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-bars" aria-hidden="true"></i> Menu</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-main-menu.html">Main menu</a></li>
-									<li><a href="admin-about-menu.html">About menu</a></li>
-									<li><a href="admin-admission-menu.html">Admission menu</a></li>
-									<li><a href="admin-all-menu.html">All page menu</a></li>
+                                    <li><a href="admin-main-menu.php">Main menu</a></li>
+									<li><a href="admin-about-menu.php">About menu</a></li>
+									<li><a href="admin-admission-menu.php">Admission menu</a></li>
+									<li><a href="admin-all-menu.php">All page menu</a></li>
                                 </ul>
                             </div>
                         </li>
-						<li><a href="admin-slider.html"><i class="fa fa-image" aria-hidden="true"></i> Slider</a>
+						<li><a href="admin-slider.php"><i class="fa fa-image" aria-hidden="true"></i> Slider</a>
                         </li>
-						<li><a href="admin-quick-link.html"><i class="fa fa-external-link-square" aria-hidden="true"></i> Slider quick link</a>
+						<li><a href="admin-quick-link.php"><i class="fa fa-external-link-square" aria-hidden="true"></i> Slider quick link</a>
                         </li>
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-calendar" aria-hidden="true"></i> Events</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-event-all.html">All Events</a>
+                                    <li><a href="admin-event-all.php">All Events</a>
                                     </li>
-                                    <li><a href="admin-event-add.html">Create New Events</a>
+                                    <li><a href="admin-event-add.php">Create New Events</a>
                                     </li>
                                 </ul>
                             </div>
@@ -133,9 +133,9 @@
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-bullhorn" aria-hidden="true"></i> Seminar</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-seminar-all.html">All Seminar</a>
+                                    <li><a href="admin-seminar-all.php">All Seminar</a>
                                     </li>
-                                    <li><a href="admin-seminar-add.html">Create New Seminar</a>
+                                    <li><a href="admin-seminar-add.php">Create New Seminar</a>
                                     </li>
                                 </ul>
                             </div>
@@ -143,9 +143,9 @@
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Job Vacants</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-job-all.html">All Jobs</a>
+                                    <li><a href="admin-job-all.php">All Jobs</a>
                                     </li>
-                                    <li><a href="admin-job-add.html">Create New Job</a>
+                                    <li><a href="admin-job-add.php">Create New Job</a>
                                     </li>
                                 </ul>
                             </div>
@@ -153,19 +153,19 @@
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-pencil" aria-hidden="true"></i> Exam time table</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-exam-all.html">All Exams</a></li>
-                                    <li><a href="admin-exam-add.html">Add New Exam</a></li>
-                                    <li><a href="admin-exam-group-all.html">All Groups</a></li>
-                                    <li><a href="admin-exam-group-add.html">Create New Groups</a></li>
+                                    <li><a href="admin-exam-all.php">All Exams</a></li>
+                                    <li><a href="admin-exam-add.php">Add New Exam</a></li>
+                                    <li><a href="admin-exam-group-all.php">All Groups</a></li>
+                                    <li><a href="admin-exam-group-add.php">Create New Groups</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-users" aria-hidden="true"></i> Students</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-user-all.html">All Students</a>
+                                    <li><a href="admin-user-all.php">All Students</a>
                                     </li>
-                                    <li><a href="admin-user-add.html">Add New Students</a>
+                                    <li><a href="admin-user-add.php">Add New Students</a>
                                     </li>
                                 </ul>
                             </div>
@@ -173,21 +173,21 @@
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-commenting-o" aria-hidden="true"></i> Enquiry</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-all-enquiry.html">All Enquiry</a></li>
-									<li><a href="admin-course-enquiry.html">Course Enquiry</a></li>
-									<li><a href="admin-admission-enquiry.html">Admission Enquiry</a></li>
-									<li><a href="admin-seminar-enquiry.html">Seminar Enquiry</a></li>
-									<li><a href="admin-event-enquiry.html">Event Enquiry</a></li>
-									<li><a href="admin-common-enquiry.html">Common Enquiry</a></li>
+                                    <li><a href="admin-all-enquiry.php">All Enquiry</a></li>
+									<li><a href="admin-course-enquiry.php">Course Enquiry</a></li>
+									<li><a href="admin-admission-enquiry.php">Admission Enquiry</a></li>
+									<li><a href="admin-seminar-enquiry.php">Seminar Enquiry</a></li>
+									<li><a href="admin-event-enquiry.php">Event Enquiry</a></li>
+									<li><a href="admin-common-enquiry.php">Common Enquiry</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-cloud-download" aria-hidden="true"></i> Import & Export</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-export-data.html">Export all datas</a>
+                                    <li><a href="admin-export-data.php">Export all datas</a>
                                     </li>
-                                    <li><a href="admin-import-data.html">Import all datas</a>
+                                    <li><a href="admin-import-data.php">Import all datas</a>
                                     </li>
                                 </ul>
                             </div>
@@ -286,7 +286,7 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/user/2.png" alt=""></span>
@@ -301,7 +301,7 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/user/4.png" alt=""></span>
@@ -316,7 +316,7 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/user/5.png" alt=""></span>
@@ -331,7 +331,7 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/user/1.png" alt=""></span>
@@ -346,7 +346,7 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/user/2.png" alt=""></span>
@@ -361,7 +361,7 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/user/4.png" alt=""></span>
@@ -376,7 +376,7 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/user/5.png" alt=""></span>
@@ -391,7 +391,7 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -431,7 +431,7 @@
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/course/sm-1.jpg" alt=""></span>
                                                     </td>
-                                                    <td><a href="admin-student-details.html"><span class="list-enq-name">Aerospace Engineering</span><span class="list-enq-city">Illunois, United States</span></a>
+                                                    <td><a href="admin-student-details.php"><span class="list-enq-name">Aerospace Engineering</span><span class="list-enq-city">Illunois, United States</span></a>
                                                     </td>
                                                     <td>Engineering</td>
                                                     <td>60 Days(420hrs)</td>
@@ -441,12 +441,12 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/course/sm-5.jpg" alt=""></span>
                                                     </td>
-                                                    <td><a href="admin-student-details.html"><span class="list-enq-name">Fashion Technology</span><span class="list-enq-city">Illunois, United States</span></a>
+                                                    <td><a href="admin-student-details.php"><span class="list-enq-name">Fashion Technology</span><span class="list-enq-city">Illunois, United States</span></a>
                                                     </td>
                                                     <td>Fashion</td>
                                                     <td>30 Days(420hrs)</td>
@@ -456,12 +456,12 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/course/sm-2.jpg" alt=""></span>
                                                     </td>
-                                                    <td><a href="admin-student-details.html"><span class="list-enq-name">Agriculture Courses</span><span class="list-enq-city">Illunois, United States</span></a>
+                                                    <td><a href="admin-student-details.php"><span class="list-enq-name">Agriculture Courses</span><span class="list-enq-city">Illunois, United States</span></a>
                                                     </td>
                                                     <td>Agriculture</td>
                                                     <td>25 Days(420hrs)</td>
@@ -471,12 +471,12 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/course/sm-3.jpg" alt=""></span>
                                                     </td>
-                                                    <td><a href="admin-student-details.html"><span class="list-enq-name">Marine Engineering</span><span class="list-enq-city">Illunois, United States</span></a>
+                                                    <td><a href="admin-student-details.php"><span class="list-enq-name">Marine Engineering</span><span class="list-enq-city">Illunois, United States</span></a>
                                                     </td>
                                                     <td>Ocean / Marine</td>
                                                     <td>06 Months</td>
@@ -486,12 +486,12 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/course/sm-4.jpg" alt=""></span>
                                                     </td>
-                                                    <td><a href="admin-student-details.html"><span class="list-enq-name">Building, Construction Management</span><span class="list-enq-city">Illunois, United States</span></a>
+                                                    <td><a href="admin-student-details.php"><span class="list-enq-name">Building, Construction Management</span><span class="list-enq-city">Illunois, United States</span></a>
                                                     </td>
                                                     <td>Construction</td>
                                                     <td>1 Year</td>
@@ -501,12 +501,12 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/course/sm-1.jpg" alt=""></span>
                                                     </td>
-                                                    <td><a href="admin-student-details.html"><span class="list-enq-name">Aerospace Engineering</span><span class="list-enq-city">Illunois, United States</span></a>
+                                                    <td><a href="admin-student-details.php"><span class="list-enq-name">Aerospace Engineering</span><span class="list-enq-city">Illunois, United States</span></a>
                                                     </td>
                                                     <td>Engineering</td>
                                                     <td>60 Days(420hrs)</td>
@@ -516,12 +516,12 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/course/sm-5.jpg" alt=""></span>
                                                     </td>
-                                                    <td><a href="admin-student-details.html"><span class="list-enq-name">Fashion Technology</span><span class="list-enq-city">Illunois, United States</span></a>
+                                                    <td><a href="admin-student-details.php"><span class="list-enq-name">Fashion Technology</span><span class="list-enq-city">Illunois, United States</span></a>
                                                     </td>
                                                     <td>Fashion</td>
                                                     <td>30 Days(420hrs)</td>
@@ -531,12 +531,12 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/course/sm-2.jpg" alt=""></span>
                                                     </td>
-                                                    <td><a href="admin-student-details.html"><span class="list-enq-name">Agriculture Courses</span><span class="list-enq-city">Illunois, United States</span></a>
+                                                    <td><a href="admin-student-details.php"><span class="list-enq-name">Agriculture Courses</span><span class="list-enq-city">Illunois, United States</span></a>
                                                     </td>
                                                     <td>Agriculture</td>
                                                     <td>25 Days(420hrs)</td>
@@ -546,12 +546,12 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/course/sm-3.jpg" alt=""></span>
                                                     </td>
-                                                    <td><a href="admin-student-details.html"><span class="list-enq-name">Marine Engineering</span><span class="list-enq-city">Illunois, United States</span></a>
+                                                    <td><a href="admin-student-details.php"><span class="list-enq-name">Marine Engineering</span><span class="list-enq-city">Illunois, United States</span></a>
                                                     </td>
                                                     <td>Ocean / Marine</td>
                                                     <td>06 Months</td>
@@ -561,12 +561,12 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/course/sm-4.jpg" alt=""></span>
                                                     </td>
-                                                    <td><a href="admin-student-details.html"><span class="list-enq-name">Building, Construction Management</span><span class="list-enq-city">Illunois, United States</span></a>
+                                                    <td><a href="admin-student-details.php"><span class="list-enq-name">Building, Construction Management</span><span class="list-enq-city">Illunois, United States</span></a>
                                                     </td>
                                                     <td>Construction</td>
                                                     <td>1 Year</td>
@@ -576,7 +576,7 @@
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
-													<td><a href="admin-student-details.html" class="ad-st-view">View</a></td>
+													<td><a href="admin-student-details.php" class="ad-st-view">View</a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -786,7 +786,7 @@
 													<td>01:00pm</td>
                                                     <td>03:00Hrs</td>
                                                     <td>
-                                                        <a href="admin-exam.html" class="ad-st-view">View</a>
+                                                        <a href="admin-exam.php" class="ad-st-view">View</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -801,7 +801,7 @@
 													<td>01:00pm</td>
                                                     <td>03:00Hrs</td>
                                                     <td>
-                                                        <a href="admin-exam.html" class="ad-st-view">View</a>
+                                                        <a href="admin-exam.php" class="ad-st-view">View</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -816,7 +816,7 @@
 													<td>01:00pm</td>
                                                     <td>03:00Hrs</td>
                                                     <td>
-                                                        <a href="admin-exam.html" class="ad-st-view">View</a>
+                                                        <a href="admin-exam.php" class="ad-st-view">View</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -831,7 +831,7 @@
 													<td>01:00pm</td>
                                                     <td>03:00Hrs</td>
                                                     <td>
-                                                        <a href="admin-exam.html" class="ad-st-view">View</a>
+                                                        <a href="admin-exam.php" class="ad-st-view">View</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -846,7 +846,7 @@
 													<td>01:00pm</td>
                                                     <td>03:00Hrs</td>
                                                     <td>
-                                                        <a href="admin-exam.html" class="ad-st-view">View</a>
+                                                        <a href="admin-exam.php" class="ad-st-view">View</a>
                                                     </td>
                                                 </tr>
                                             </tbody>

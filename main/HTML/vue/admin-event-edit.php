@@ -50,9 +50,9 @@
             <!--== NOTIFICATION ==-->
             <div class="col-md-2 tab-hide">
                 <div class="top-not-cen">
-                    <a class='waves-effect btn-noti' href="admin-all-enquiry.html" title="all enquiry messages"><i class="fa fa-commenting-o" aria-hidden="true"></i><span>5</span></a>
-                    <a class='waves-effect btn-noti' href="admin-course-enquiry.html" title="course booking messages"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>5</span></a>
-                    <a class='waves-effect btn-noti' href="admin-admission-enquiry.html" title="admission enquiry"><i class="fa fa-tag" aria-hidden="true"></i><span>5</span></a>
+                    <a class='waves-effect btn-noti' href="admin-all-enquiry.php" title="all enquiry messages"><i class="fa fa-commenting-o" aria-hidden="true"></i><span>5</span></a>
+                    <a class='waves-effect btn-noti' href="admin-course-enquiry.php" title="course booking messages"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>5</span></a>
+                    <a class='waves-effect btn-noti' href="admin-admission-enquiry.php" title="admission enquiry"><i class="fa fa-tag" aria-hidden="true"></i><span>5</span></a>
                 </div>
             </div>
             <!--== MY ACCCOUNT ==-->
@@ -63,7 +63,7 @@
 
                 <!-- Dropdown Structure -->
                 <ul id='top-menu' class='dropdown-content top-menu-sty'>
-                    <li><a href="admin-panel-setting.html" class="waves-effect"><i class="fa fa-cogs" aria-hidden="true"></i>Admin Setting</a>
+                    <li><a href="admin-panel-setting.php" class="waves-effect"><i class="fa fa-cogs" aria-hidden="true"></i>Admin Setting</a>
                     </li>
                     <li class="divider"></li>
                     <li><a href="#" class="ho-dr-con-last waves-effect"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout</a>
@@ -91,18 +91,18 @@
                 <!--== LEFT MENU ==-->
                 <div class="sb2-13">
                     <ul class="collapsible" data-collapsible="accordion">
-                        <li><a href="admin.html" class="menu-active"><i class="fa fa-bar-chart" aria-hidden="true"></i> Dashboard</a>
+                        <li><a href="admin.php" class="menu-active"><i class="fa fa-bar-chart" aria-hidden="true"></i> Dashboard</a>
                         </li>
-						<li><a href="admin-setting.html"><i class="fa fa-cogs" aria-hidden="true"></i> Site Setting</a>
+						<li><a href="admin-setting.php"><i class="fa fa-cogs" aria-hidden="true"></i> Site Setting</a>
                         </li>
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-book" aria-hidden="true"></i> All Courses</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-all-courses.html">All Course</a>
+                                    <li><a href="admin-all-courses.php">All Course</a>
                                     </li>
-                                    <li><a href="admin-add-courses.html">Add New Course</a>
+                                    <li><a href="admin-add-courses.php">Add New Course</a>
                                     </li>
-                                    <li><a href="admin-trash-courses.html">Trash Course</a>
+                                    <li><a href="admin-trash-courses.php">Trash Course</a>
                                     </li>
                                 </ul>
                             </div>
@@ -110,9 +110,9 @@
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-user" aria-hidden="true"></i> Users</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-user-all.html">All Users</a>
+                                    <li><a href="admin-user-all.php">All Users</a>
                                     </li>
-                                    <li><a href="admin-user-add.html">Add New user</a>
+                                    <li><a href="admin-user-add.php">Add New user</a>
                                     </li>
                                 </ul>
                             </div>
@@ -120,9 +120,9 @@
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-bookmark-o" aria-hidden="true"></i>All Pages</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-page-all.html">Pages</a>
+                                    <li><a href="admin-page-all.php">Pages</a>
                                     </li>
-                                    <li><a href="admin-page-add.html">Create New Page</a>
+                                    <li><a href="admin-page-add.php">Create New Page</a>
                                     </li>
                                 </ul>
                             </div>
@@ -130,23 +130,23 @@
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-bars" aria-hidden="true"></i> Menu</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-main-menu.html">Main menu</a></li>
-									<li><a href="admin-about-menu.html">About menu</a></li>
-									<li><a href="admin-admission-menu.html">Admission menu</a></li>
-									<li><a href="admin-all-menu.html">All page menu</a></li>
+                                    <li><a href="admin-main-menu.php">Main menu</a></li>
+									<li><a href="admin-about-menu.php">About menu</a></li>
+									<li><a href="admin-admission-menu.php">Admission menu</a></li>
+									<li><a href="admin-all-menu.php">All page menu</a></li>
                                 </ul>
                             </div>
                         </li>
-						<li><a href="admin-slider.html"><i class="fa fa-image" aria-hidden="true"></i> Slider</a>
+						<li><a href="admin-slider.php"><i class="fa fa-image" aria-hidden="true"></i> Slider</a>
                         </li>
-						<li><a href="admin-quick-link.html"><i class="fa fa-external-link-square" aria-hidden="true"></i> Slider quick link</a>
+						<li><a href="admin-quick-link.php"><i class="fa fa-external-link-square" aria-hidden="true"></i> Slider quick link</a>
                         </li>
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-calendar" aria-hidden="true"></i> Events</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-event-all.html">All Events</a>
+                                    <li><a href="admin-event-all.php">All Events</a>
                                     </li>
-                                    <li><a href="admin-event-add.html">Create New Events</a>
+                                    <li><a href="admin-event-add.php">Create New Events</a>
                                     </li>
                                 </ul>
                             </div>
@@ -154,9 +154,9 @@
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-bullhorn" aria-hidden="true"></i> Seminar</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-seminar-all.html">All Seminar</a>
+                                    <li><a href="admin-seminar-all.php">All Seminar</a>
                                     </li>
-                                    <li><a href="admin-seminar-add.html">Create New Seminar</a>
+                                    <li><a href="admin-seminar-add.php">Create New Seminar</a>
                                     </li>
                                 </ul>
                             </div>
@@ -164,9 +164,9 @@
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Job Vacants</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-job-all.html">All Jobs</a>
+                                    <li><a href="admin-job-all.php">All Jobs</a>
                                     </li>
-                                    <li><a href="admin-job-add.html">Create New Job</a>
+                                    <li><a href="admin-job-add.php">Create New Job</a>
                                     </li>
                                 </ul>
                             </div>
@@ -174,19 +174,19 @@
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-pencil" aria-hidden="true"></i> Exam time table</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-exam-all.html">All Exams</a></li>
-                                    <li><a href="admin-exam-add.html">Add New Exam</a></li>
-                                    <li><a href="admin-exam-group-all.html">All Groups</a></li>
-                                    <li><a href="admin-exam-group-add.html">Create New Groups</a></li>
+                                    <li><a href="admin-exam-all.php">All Exams</a></li>
+                                    <li><a href="admin-exam-add.php">Add New Exam</a></li>
+                                    <li><a href="admin-exam-group-all.php">All Groups</a></li>
+                                    <li><a href="admin-exam-group-add.php">Create New Groups</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-users" aria-hidden="true"></i> Students</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-user-all.html">All Students</a>
+                                    <li><a href="admin-user-all.php">All Students</a>
                                     </li>
-                                    <li><a href="admin-user-add.html">Add New Students</a>
+                                    <li><a href="admin-user-add.php">Add New Students</a>
                                     </li>
                                 </ul>
                             </div>
@@ -194,21 +194,21 @@
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-commenting-o" aria-hidden="true"></i> Enquiry</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-all-enquiry.html">All Enquiry</a></li>
-									<li><a href="admin-course-enquiry.html">Course Enquiry</a></li>
-									<li><a href="admin-admission-enquiry.html">Admission Enquiry</a></li>
-									<li><a href="admin-seminar-enquiry.html">Seminar Enquiry</a></li>
-									<li><a href="admin-event-enquiry.html">Event Enquiry</a></li>
-									<li><a href="admin-common-enquiry.html">Common Enquiry</a></li>
+                                    <li><a href="admin-all-enquiry.php">All Enquiry</a></li>
+									<li><a href="admin-course-enquiry.php">Course Enquiry</a></li>
+									<li><a href="admin-admission-enquiry.php">Admission Enquiry</a></li>
+									<li><a href="admin-seminar-enquiry.php">Seminar Enquiry</a></li>
+									<li><a href="admin-event-enquiry.php">Event Enquiry</a></li>
+									<li><a href="admin-common-enquiry.php">Common Enquiry</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-cloud-download" aria-hidden="true"></i> Import & Export</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
-                                    <li><a href="admin-export-data.html">Export all datas</a>
+                                    <li><a href="admin-export-data.php">Export all datas</a>
                                     </li>
-                                    <li><a href="admin-import-data.html">Import all datas</a>
+                                    <li><a href="admin-import-data.php">Import all datas</a>
                                     </li>
                                 </ul>
                             </div>
@@ -224,7 +224,7 @@
                     <ul>
                         <li><a href="../../../index.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                         </li>
-                        <li class="active-bre"><a href="#"> Student Details</a>
+                        <li class="active-bre"><a href="#"> Edit Event</a>
                         </li>
                         <li class="page-back"><a href="../../../index.php"><i class="fa fa-backward" aria-hidden="true"></i> Back</a>
                         </li>
@@ -237,29 +237,33 @@
                         <div class="col-md-12">
 						<div class="box-inn-sp admin-form">
                                 <div class="inn-title">
-                                    <h4>Student Informations</h4>
+                                    <h4>Edit Event</h4>
                                     <p>Here you can edit your website basic details URL, Phone, Email, Address, User and password and more</p>
                                 </div>
                                 <div class="tab-inn">
                                     <form>
                                         <div class="row">
-                                            <div class="input-field col s6">
-                                                <input type="text" value="John" class="validate" required>
-                                                <label class="">First name</label>
+                                            <div class="input-field col s12">
+                                                <input type="text" value="Latinoo College Expo 2018 - DONATION" class="validate" required>
+                                                <label class="">Event name</label>
                                             </div>
-                                            <div class="input-field col s6">
-                                                <input type="text" value="Smith" class="validate" required>
-                                                <label class="">Last name</label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <textarea>Fusce purus mauris, blandit vitae purus eget, viverra volutpat nibh. Nam in elementum nisi, a placerat nisi. Quisque ullamcorper magna in odio rhoncus semper.Sed nec ultricies velit. Aliquam non massa id enim ultrices aliquet a ac tortor.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</textarea>
+                                                <label class="">Event Descriptions</label>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="input-field col s6">
-                                                <input type="number" value="0198575241" class="validate" required>
-                                                <label class="">Phone number</label>
+                                                <input type="text" value="Jan 01, 2018" class="validate" required>
+                                                <label class="">Date</label>
                                             </div>
                                             <div class="input-field col s6">
-                                                <input type="email" class="validate" value="john_smith@gmail.com" required>
-                                                <label class="">Email is</label>
+                                                <input type="text" class="validate" value="02:00 PM GMT" required>
+                                                <label class="">Time</label>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -268,24 +272,8 @@
                                                 <label class="">City</label>
                                             </div>
                                             <div class="input-field col s6">
-                                                <input type="text" value="united states" class="validate">
+                                                <input type="text" value="United states" class="validate">
                                                 <label class="">Country</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="input-field col s6">
-                                                <input type="password" value="sdflg345609" class="validate">
-                                                <label class="">Password</label>
-                                            </div>
-                                            <div class="input-field col s6">
-                                                <input type="password" value="asfgdkl678" class="validate">
-                                                <label class="">Confirm Password</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <input type="text" value="ST17241" class="validate">
-                                                <label>Student id</label>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -295,10 +283,11 @@
 													<input type="file">
 												</div>
 												<div class="file-path-wrapper">
-													<input class="file-path validate" type="text" placeholder="Profile image">
+													<input class="file-path validate" type="text" placeholder="Event image">
 												</div>
 											</div>
-                                        </div>                                        <div class="row">
+                                        </div>
+										<div class="row">
                                             <div class="input-field col s12">
                                                 <i class="waves-effect waves-light btn-large waves-input-wrapper" style=""><input type="submit" class="waves-button-input"></i>
                                             </div>

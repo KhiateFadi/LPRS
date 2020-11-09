@@ -32,211 +32,7 @@
 <body>
 
     <!-- MOBILE MENU -->
-    <section>
-        <div class="ed-mob-menu">
-            <div class="ed-mob-menu-con">
-                <div class="ed-mm-left">
-                    <div class="wed-logo">
-                      <img style="width:50px;height:50px;" src="main/HTML/images/logo.png" alt="" />
-
-                    </div>
-                </div>
-                <div class="ed-mm-right">
-                    <div class="ed-mm-menu">
-                        <a href="#!" class="ed-micon"><i class="fa fa-bars"></i></a>
-                        <div class="ed-mm-inn">
-                            <a href="#!" class="ed-mi-close"><i class="fa fa-times"></i></a>
-                            <h4>All Courses</h4>
-                            <ul>
-                                <li><a href="course-details.html">Accounting/Finance</a></li>
-                                <li><a href="course-details.html">civil engineering</a></li>
-                                <li><a href="course-details.html">Art/Design</a></li>
-                                <li><a href="course-details.html">Marine Engineering</a></li>
-                                <li><a href="course-details.html">Business Management</a></li>
-                                <li><a href="course-details.html">Journalism/Writing</a></li>
-                                <li><a href="course-details.html">Physical Education</a></li>
-                                <li><a href="course-details.html">Political Science</a></li>
-                                <li><a href="course-details.html">Sciences</a></li>
-                                <li><a href="course-details.html">Statistics</a></li>
-                                <li><a href="course-details.html">Web Design/Development</a></li>
-                                <li><a href="course-details.html">SEO</a></li>
-                                <li><a href="course-details.html">Google Business</a></li>
-                                <li><a href="course-details.html">Graphics Design</a></li>
-                                <li><a href="course-details.html">Networking Courses</a></li>
-                                <li><a href="course-details.html">Information technology</a></li>
-                            </ul>
-                            <h4>User Account</h4>
-                            <ul>
-                                <li><a href="#!" data-toggle="modal" data-target="#modal1">Sign In</a></li>
-                                <li><a href="#!" data-toggle="modal" data-target="#modal2">Register</a></li>
-                            </ul>
-                            <h4>All Pages</h4>
-                            <ul>
-                                <li><a href="../../../index.php">Home</a></li>
-                                <li><a href="about.html">About us</a></li>
-                                <li><a href="admission.html">Admission</a></li>
-                                <li><a href="all-courses.html">All courses</a></li>
-                                <li><a href="course-details.html">Course details</a></li>
-                                <li><a href="awards.html">Awards</a></li>
-                                <li><a href="seminar.html">Seminar</a></li>
-                                <li><a href="events.html">Events</a></li>
-                                <li><a href="event-details.html">Event details</a></li>
-                                <li><a href="event-register.html">Event register</a></li>
-                                <li><a href="contact-us.html">Contact us</a></li>
-                            </ul>
-                            <h4>User Profile</h4>
-                            <ul>
-                                <li><a href="dashboard.html">User profile</a></li>
-                                <li><a href="db-courses.html">Courses</a></li>
-                                <li><a href="db-exams.html">Exams</a></li>
-                                <li><a href="db-profile.php">Prfile</a></li>
-                                <li><a href="db-time-line.html">Time line</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--HEADER SECTION-->
-    <section>
-        <!-- TOP BAR -->
-        <div class="ed-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="ed-com-t1-left">
-                            <ul>
-                                <li><a href="#">LYCÉE PRIVÉ ET UFA - ROBERT SCHUMAN - Enseignement catholique sous contrat avec l'état</a>
-                                </li>
-                                <li><a href="#">Tél: 01 48 37 74 26</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="ed-com-t1-right">
-                            <ul>
-                                <li><a href="#!" data-toggle="modal" data-target="#modal1">Connexion</a>
-                                </li>
-                                <li><a href="#!" data-toggle="modal" data-target="#modal2">Inscription</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- LOGO AND MENU SECTION -->
-        <div class="top-logo" data-spy="affix" data-offset-top="250">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="wed-logo">
-                            <a href="../../../index.php"><img style="margin-left:60px;width:90px;height:90px;margin-top:-9px;" src="main/HTML/images/logo.png" alt="" />
-                            </a>
-                        </div>
-                        <div class="main-menu">
-                            <ul>
-                                <li><a href="../../../index.php">Accueil</a>
-                                </li>
-                                <li class="about-menu">
-                                    <a href="main/HTML/vue/all-courses.html" class="mm-arr">Formation</a>
-                                    <!-- MEGA MENU 1 -->
-                                    <div class="mm-pos">
-                                        <div class="about-mm m-menu">
-                                            <div class="m-menu-inn">
-                                                <div class="mm1-com mm1-s1">
-                                                    <div class="ed-course-in">
-                                                        <a class="course-overlay menu-about" href="main/HTML/vue/admission.html">
-                                                            <img src="main/HTML/images/site/Formation.jpg" alt="">
-                                                            <span>Formation</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-
-                                                <div class="mm1-com mm1-s3">
-                                                    <ul>
-                                                        <li><a href="main/HTML/vue/all-courses.html">TROISIÈME PRÉPA PRO</a></li>
-                                                        <li><a href="main/HTML/vue/all-courses.html">BAC PRO TU</a></li>
-                                                        <li><a href="main/HTML/vue/all-courses.html">BAC PRO MEI</a></li>
-                                                        <li><a href="main/HTML/vue/admission.html">BAC PRO SN</a></li>
-                                                        <li><a href="main/HTML/vue/awards.html">FORMATION SST</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="mm1-com mm1-s4">
-                                                    <ul>
-                                                        <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
-                                                        <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
-                                                        <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
-                                                        <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="admi-menu">
-                                    <a href="main/HTML/vue/awards.html" class="mm-arr">Relation entreprise</a>
-                                    <!-- MEGA MENU 1 -->
-                                </li>
-                                <li><a href="main/HTML/vue/contact-us.html">Contact</a></li>
-                                <!--<li><a class='dropdown-button ed-sub-menu' href='#' data-activates='dropdown1'>Courses</a></li>-->
-                                <li class="cour-menu"/>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="all-drop-down-menu">
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="search-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="search-form">
-                            <form>
-                                <div class="sf-type">
-                                    <div class="sf-input">
-                                        <input type="text" id="sf-box" placeholder="Search course and discount courses">
-                                    </div>
-                                    <div class="sf-list">
-                                        <ul>
-                                            <li><a href="main/HTML/vue/all-courses.html">Accounting/Finance</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">civil engineering</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">Art/Design</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">Marine Engineering</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">Business Management</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">Journalism/Writing</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">Physical Education</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">Political Science</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">Sciences</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">Statistics</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">Web Design/Development</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">Web Design/Development</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">SEO</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">Google Business</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">Graphics Design</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">Networking Courses</a></li>
-                                            <li><a href="main/HTML/vue/all-courses.html">Information technology</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="sf-submit">
-                                    <input type="submit" value="Search Course">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include('header.php'); ?>
     <!--END HEADER SECTION-->
 
     <!--SECTION START-->
@@ -602,7 +398,7 @@
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
                         </div>
                         <div class="col-md-3 bb-link">
-                            <a href="course-details.html">Book This Course</a>
+                            <a href="course-details.php">Book This Course</a>
                         </div>
                     </div>
                 </div>
@@ -627,27 +423,27 @@
                 <div class="col-md-4 foot-tc-mar-t-o">
                     <h4>Top Courses</h4>
                     <ul>
-                        <li><a href="course-details.html">Accounting/Finance</a></li>
-                        <li><a href="course-details.html">civil engineering</a></li>
-                        <li><a href="course-details.html">Art/Design</a></li>
-                        <li><a href="course-details.html">Marine Engineering</a></li>
-                        <li><a href="course-details.html">Business Management</a></li>
-                        <li><a href="course-details.html">Journalism/Writing</a></li>
-                        <li><a href="course-details.html">Physical Education</a></li>
-                        <li><a href="course-details.html">Political Science</a></li>
+                        <li><a href="course-details.php">Accounting/Finance</a></li>
+                        <li><a href="course-details.php">civil engineering</a></li>
+                        <li><a href="course-details.php">Art/Design</a></li>
+                        <li><a href="course-details.php">Marine Engineering</a></li>
+                        <li><a href="course-details.php">Business Management</a></li>
+                        <li><a href="course-details.php">Journalism/Writing</a></li>
+                        <li><a href="course-details.php">Physical Education</a></li>
+                        <li><a href="course-details.php">Political Science</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h4>New Courses</h4>
                     <ul>
-                        <li><a href="course-details.html">Sciences</a></li>
-                        <li><a href="course-details.html">Statistics</a></li>
-                        <li><a href="course-details.html">Web Design/Development</a></li>
-                        <li><a href="course-details.html">SEO</a></li>
-                        <li><a href="course-details.html">Google Business</a></li>
-                        <li><a href="course-details.html">Graphics Design</a></li>
-                        <li><a href="course-details.html">Networking Courses</a></li>
-                        <li><a href="course-details.html">Information technology</a></li>
+                        <li><a href="course-details.php">Sciences</a></li>
+                        <li><a href="course-details.php">Statistics</a></li>
+                        <li><a href="course-details.php">Web Design/Development</a></li>
+                        <li><a href="course-details.php">SEO</a></li>
+                        <li><a href="course-details.php">Google Business</a></li>
+                        <li><a href="course-details.php">Graphics Design</a></li>
+                        <li><a href="course-details.php">Networking Courses</a></li>
+                        <li><a href="course-details.php">Information technology</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">

@@ -39,7 +39,7 @@
 				</div>
 				<div class="ad-log-in-con">
 			<div class="log-in-pop-right">
-                    <h4>Forgot Password</h4>
+                    <h4>Login</h4>
                     <p>Don't have an account? Create your account. It's take less then a minutes</p>
                     <form class="s12">
                         <div>
@@ -50,8 +50,8 @@
                         </div>
                         <div>
                             <div class="input-field s12">
-                                <input type="email" class="validate">
-                                <label>Email id</label>
+                                <input type="password" class="validate">
+                                <label>Password</label>
                             </div>
                         </div>
                         <div>
@@ -64,10 +64,10 @@
                         </div>
                         <div>
                             <div class="input-field s4">
-                                <i class="waves-effect waves-light log-in-btn waves-input-wrapper" style=""><input type="submit" value="Submit" class="waves-button-input"></i> </div>
+                                <i class="waves-effect waves-light log-in-btn waves-input-wrapper" style=""><input type="submit" value="Login" class="waves-button-input"></i> </div>
                         </div>
                         <div>
-                            <div class="input-field s12"> <a href="admin-login.html">Admin login</a> | <a href="#">Create a new account</a> </div>
+                            <div class="input-field s12"> <a href="admin-forgot.php">Forgot password</a> | <a href="#">Create a new account</a> </div>
                         </div>
                     </form>
                 </div>

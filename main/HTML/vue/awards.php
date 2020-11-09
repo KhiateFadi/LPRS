@@ -50,15 +50,15 @@ require_once('../manager/manager.php');
                           <a href="#!" class="ed-mi-close"><i class="fa fa-times"></i></a>
                           <h4>Formation</h4>
                           <ul>
-                            <li><a href="troisieme-prepa.html">TROISIÈME PRÉPA PRO</a></li>
-                            <li><a href="bac-pro-tu.html">BAC PRO TU</a></li>
-                            <li><a href="bac-pro-mei.html">BAC PRO MEI</a></li>
-                            <li><a href="bac-pro-sn.html">BAC PRO SN</a></li>
-                            <li><a href="formation-sst.html">FORMATION SST</a></li>
-                            <li><a href="bac-sti2d.html">BAC STI2D</a></li>
-                            <li><a href="bts-cprp.html">BTS CPRP</a></li>
-                            <li><a href="bts-sio-sisr.html">BTS SIO – OPTION SISR</a></li>
-                            <li><a href="bts-sio-slam.html">BTS SIO – OPTION SLAM</a></li>
+                            <li><a href="troisieme-prepa.php">TROISIÈME PRÉPA PRO</a></li>
+                            <li><a href="bac-pro-tu.php">BAC PRO TU</a></li>
+                            <li><a href="bac-pro-mei.php">BAC PRO MEI</a></li>
+                            <li><a href="bac-pro-sn.php">BAC PRO SN</a></li>
+                            <li><a href="formation-sst.php">FORMATION SST</a></li>
+                            <li><a href="bac-sti2d.php">BAC STI2D</a></li>
+                            <li><a href="bts-cprp.php">BTS CPRP</a></li>
+                            <li><a href="bts-sio-sisr.php">BTS SIO – OPTION SISR</a></li>
+                            <li><a href="bts-sio-slam.php">BTS SIO – OPTION SLAM</a></li>
                           </ul>
                           <h4>Compte</h4>
                           <ul>
@@ -68,9 +68,9 @@ require_once('../manager/manager.php');
                           <h4>All Pages</h4>
                           <ul>
                               <li><a href="../../../index.php">Accueil</a></li>
-                              <li><a href="main/HTML/vue/all-courses.html">Formation</a></li>
+                              <li><a href="main/HTML/vue/all-courses.php">Formation</a></li>
                               <li><a href="main/HTML/vue/awards.php">Relation entreprise</a></li>
-                              <li><a href="main/HTML/vue/contact-us.html">Contact</a></li>
+                              <li><a href="main/HTML/vue/contact-us.php">Contact</a></li>
 
                           </ul>
 
@@ -124,14 +124,14 @@ require_once('../manager/manager.php');
                                 <li><a href="../../../index.php">Accueil</a>
                                 </li>
                                 <li class="about-menu">
-                                    <a href="all-courses.html" class="mm-arr">Formation</a>
+                                    <a href="all-courses.php" class="mm-arr">Formation</a>
                                     <!-- MEGA MENU 1 -->
                                     <div class="mm-pos">
                                         <div class="about-mm m-menu">
                                             <div class="m-menu-inn">
                                                 <div class="mm1-com mm1-s1">
                                                     <div class="ed-course-in">
-                                                        <a class="course-overlay menu-about" href="main/HTML/vue/admission.html">
+                                                        <a class="course-overlay menu-about" href="main/HTML/vue/admission.php">
                                                             <img src="../images/site/Formation.jpg" alt="">
                                                             <span>Formation</span>
                                                         </a>
@@ -140,19 +140,19 @@ require_once('../manager/manager.php');
 
                                                 <div class="mm1-com mm1-s3">
                                                     <ul>
-                                                      <li><a href="troisieme-prepa.html">TROISIÈME PRÉPA PRO</a></li>
-                                                      <li><a href="bac-pro-tu.html">BAC PRO TU</a></li>
-                                                      <li><a href="bac-pro-mei.html">BAC PRO MEI</a></li>
-                                                      <li><a href="bac-pro-sn.html">BAC PRO SN</a></li>
-                                                      <li><a href="formation-sst.html">FORMATION SST</a></li>
+                                                      <li><a href="troisieme-prepa.php">TROISIÈME PRÉPA PRO</a></li>
+                                                      <li><a href="bac-pro-tu.php">BAC PRO TU</a></li>
+                                                      <li><a href="bac-pro-mei.php">BAC PRO MEI</a></li>
+                                                      <li><a href="bac-pro-sn.php">BAC PRO SN</a></li>
+                                                      <li><a href="formation-sst.php">FORMATION SST</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="mm1-com mm1-s4">
                                                     <ul>
-                                                      <li><a href="bac-sti2d.html">BAC STI2D</a></li>
-                                                      <li><a href="bts-cprp.html">BTS CPRP</a></li>
-                                                      <li><a href="bts-sio-sisr.html">BTS SIO – OPTION SISR</a></li>
-                                                      <li><a href="bts-sio-slam.html">BTS SIO – OPTION SLAM</a></li>
+                                                      <li><a href="bac-sti2d.php">BAC STI2D</a></li>
+                                                      <li><a href="bts-cprp.php">BTS CPRP</a></li>
+                                                      <li><a href="bts-sio-sisr.php">BTS SIO – OPTION SISR</a></li>
+                                                      <li><a href="bts-sio-slam.php">BTS SIO – OPTION SLAM</a></li>
 
                                                     </ul>
                                                 </div>
@@ -164,7 +164,7 @@ require_once('../manager/manager.php');
                                     <a href="awards.php" class="mm-arr">Relation entreprise</a>
                                     <!-- MEGA MENU 1 -->
                                 </li>
-                                <li><a href="contact-us.html">Contact</a></li>
+                                <li><a href="contact-us.php">Contact</a></li>
                                 <!--<li><a class='dropdown-button ed-sub-menu' href='#' data-activates='dropdown1'>Courses</a></li>-->
                                 <li class="cour-menu"/>
                             </ul>
@@ -187,15 +187,15 @@ require_once('../manager/manager.php');
 
                                     <div class="sf-list">
                                         <ul>
-                                          <li><a href="troisieme-prepa.html">TROISIÈME PRÉPA PRO</a></li>
-                                          <li><a href="bac-pro-tu.html">BAC PRO TU</a></li>
-                                          <li><a href="bac-pro-mei.html">BAC PRO MEI</a></li>
-                                          <li><a href="bac-pro-sn.html">BAC PRO SN</a></li>
-                                          <li><a href="formation-sst.html">FORMATION SST</a></li>
-                                          <li><a href="bac-sti2d.html">BAC STI2D</a></li>
-                                          <li><a href="bts-cprp.html">BTS CPRP</a></li>
-                                          <li><a href="bts-sio-sisr.html">BTS SIO – OPTION SISR</a></li>
-                                          <li><a href="bts-sio-slam.html">BTS SIO – OPTION SLAM</a></li>
+                                          <li><a href="troisieme-prepa.php">TROISIÈME PRÉPA PRO</a></li>
+                                          <li><a href="bac-pro-tu.php">BAC PRO TU</a></li>
+                                          <li><a href="bac-pro-mei.php">BAC PRO MEI</a></li>
+                                          <li><a href="bac-pro-sn.php">BAC PRO SN</a></li>
+                                          <li><a href="formation-sst.php">FORMATION SST</a></li>
+                                          <li><a href="bac-sti2d.php">BAC STI2D</a></li>
+                                          <li><a href="bts-cprp.php">BTS CPRP</a></li>
+                                          <li><a href="bts-sio-sisr.php">BTS SIO – OPTION SISR</a></li>
+                                          <li><a href="bts-sio-slam.php">BTS SIO – OPTION SLAM</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -430,7 +430,7 @@ require_once('../manager/manager.php');
 
                             </li>
 
-                  
+
                 </div>
             </div>
         </div>
@@ -522,15 +522,15 @@ require_once('../manager/manager.php');
                 <div class="col-md-4 foot-tc-mar-t-o">
                     <h4>Formation</h4>
                     <ul>
-                      <li><a href="troisieme-prepa.html">TROISIÈME PRÉPA PRO</a></li>
-                      <li><a href="bac-pro-tu.html">BAC PRO TU</a></li>
-                      <li><a href="bac-pro-mei.html">BAC PRO MEI</a></li>
-                      <li><a href="bac-pro-sn.html">BAC PRO SN</a></li>
-                      <li><a href="formation-sst.html">FORMATION SST</a></li>
-                      <li><a href="bac-sti2d.html">BAC STI2D</a></li>
-                      <li><a href="bts-cprp.html">BTS CPRP</a></li>
-                      <li><a href="bts-sio-sisr.html">BTS SIO – OPTION SISR</a></li>
-                      <li><a href="bts-sio-slam.html">BTS SIO – OPTION SLAM</a></li>
+                      <li><a href="troisieme-prepa.php">TROISIÈME PRÉPA PRO</a></li>
+                      <li><a href="bac-pro-tu.php">BAC PRO TU</a></li>
+                      <li><a href="bac-pro-mei.php">BAC PRO MEI</a></li>
+                      <li><a href="bac-pro-sn.php">BAC PRO SN</a></li>
+                      <li><a href="formation-sst.php">FORMATION SST</a></li>
+                      <li><a href="bac-sti2d.php">BAC STI2D</a></li>
+                      <li><a href="bts-cprp.php">BTS CPRP</a></li>
+                      <li><a href="bts-sio-sisr.php">BTS SIO – OPTION SISR</a></li>
+                      <li><a href="bts-sio-slam.php">BTS SIO – OPTION SLAM</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">

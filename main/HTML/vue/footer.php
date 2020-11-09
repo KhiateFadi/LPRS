@@ -46,7 +46,7 @@
                         <ul>
                         <p>Adresse : 5 Avenue du Général de Gaulle, 93440 Dugny</p>
                         <p>Téléphone : 01 48 37 74 26</a></p>
-                        <p>Email: <a href="#!">administration@lyceerobertschuman.com</a></p>
+                        <p>Email: <a href="#!">administration@lyceerobertschuman.com</p>
                       </ul>
                     </div>
 

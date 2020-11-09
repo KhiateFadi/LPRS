@@ -34,7 +34,46 @@
     <!-- MOBILE MENU -->
   <?php include('header.php'); ?>
 
+  <!--SECTION START-->
+      <section>
+          <div class="container com-sp pad-bot-70">
+              <div class="row">
+                  <div class="cor about-sp">
+                      <div class="ed-about-tit">
+                          <div class="con-title">
+                    <h2><span>Nous contacter </span></h2>
+                          </div>
+                      </div>
+                      <div class="pg-contact">
+                          <div class="col-md-3 col-sm-6 col-xs-12 new-con new-con1">
+                              <h2><span>LYCÉE PRIVÉ ET UFA ROBERT SCHUMAN </span></h2>
+                              <p> Enseignement catholique sous contrat d'association avec l'Etat
+                              Etablissement habilité à percevoir la taxe d'apprentissage </p>
+                          </div>
+                          <div class="col-md-3 col-sm-6 col-xs-12 new-con new-con1"> <img src="img/contact/1.png" alt="">
+                            <h2><span>Adresse </span></h2>
+                              <p>5 avenue du Général de Gaulle - 93440 Dugny
+                                  <br>France</p>
+                          </div>
+                          <div class="col-md-3 col-sm-6 col-xs-12 new-con new-con1">
+                        <h2><span>Accès</span></h2>
 
+                                  <p>RER B (Le Bourget) et Bus 133 (Albert Chardavoine)</p>
+                                  <p>RER B (La Courneuve) et Bus 249 (Albert Chardavoine) </p>
+                                  <p>Tramway T11: arrêt Dugny-La Courneuve </p>
+
+                          </div>
+                          <div class="col-md-3 col-sm-6 col-xs-12 new-con new-con3"> <img src="img/contact/2.png" alt="">
+                              <h2><span>Contact</span></h2>
+                              <p> <a href="tel://0148377426" class="contact-icon">Téléphone : 01 48 37 74 26</a>
+                                  <br> <a href="mailto:administration@lyceerobertschuman.com" class="contact-icon">Email: administration@lyceerobertschuman.com</a> </p>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
     <!--SECTION END-->
 
     <section id="map">

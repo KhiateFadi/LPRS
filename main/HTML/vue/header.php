@@ -146,7 +146,7 @@
                                     </div>
                                 </li>
                                 <li class="admi-menu">
-                                    <a href="/LPRS/main/HTML/vue/awards.php" class="mm-arr">Evénement</a>
+                                    <a href="/LPRS/main/HTML/vue/awards.php" class="mm-arr">Relation entreprise</a>
                                     <!-- MEGA MENU 1 -->
                                 </li>
                                 <li><a href="/LPRS/main/HTML/vue/contact-us.php">Contact</a></li>

@@ -63,9 +63,9 @@
                     <div class="col-md-12">
                         <div class="ed-com-t1-left">
                             <ul>
-                                <li><a href="#">LYCÉE PRIVÉ ET UFA - ROBERT SCHUMAN - Enseignement catholique sous contrat avec l'état</a>
+                                <li><a href="/LPRS/main/HTML/vue/contact-us.php">LYCÉE PRIVÉ ET UFA - ROBERT SCHUMAN - Enseignement catholique sous contrat avec l'état</a>
                                 </li>
-                                <li><a href="#">Tél: 01 48 37 74 26</a>
+                                <li><a href="tel://0148377426" class="contact-icon">Téléphone : 01 48 37 74 26</a>
                                 </li>
                             </ul>
                         </div>

@@ -1,4 +1,13 @@
 <?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+//Recuperation de données des page suivantes //
+require '../vendor/phpmailer/phpmailer/src/Exception.php';
+require '../vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require '../vendor/phpmailer/phpmailer/src/SMTP.php';
+require '../vendor/autoload.php';
+
 Class Manager{
 
 public function connexion($con){
@@ -16,6 +25,7 @@ public function connexion($con){
   }
   else {
     echo "Mauvais login veuillez réessayer !";
+
      header('Location:../../../indexx.html');
   }
 
@@ -30,6 +40,7 @@ public function connexion($con){
 if ($b == true) {
             $_SESSION['id'] = $b['id'];
             header('Location: ../../../index.php');
+            mail($new->getMail());
 
 
           }
@@ -37,6 +48,28 @@ if ($b == true) {
            echo "Mauvais login veuillez réessayer !";
            header('Location:../../../index.php');
           }
+}
+          public function Mail($donnee){
+          $mail = new PHPMailer();
+          $mail->isSMTP();                                            // Send using SMTP
+          $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+          $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+          $mail->Username   = 'iliassalmiii@outlook.com';                     // SMTP username
+          $mail->Password   = '4d2d909e';                               // SMTP password
+          $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+          $mail->Port       = 587;                                    // TCP port to connect to
+
+          //Recipients
+          $mail->setFrom('iliassalmiii@outlook.com', 'Nouvelle demande de contact');
+          $mail->addAddress('Contact');     // Add a recipient //Recipients
+           $mail->Body    =   $donnee->getmessage();
+          if(!$mail->Send()) {
+            echo '<body onLoad="alert(\'Erreur\')">';
+          echo '<meta http-equiv="refresh" content="0;URL=../View/contact.php">';
+          } else {
+             header("location: ../../index.php");
+          }
+
     }
 
     public function modification_user($user,$id)
@@ -109,9 +142,6 @@ public function reservation($k){
         'mail'=>$k->getMail()));
         header('Location:../../../index.php');
     }
-
-
-
 }
 
 

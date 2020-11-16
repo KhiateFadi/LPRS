@@ -36,7 +36,7 @@
         <div class="container com-sp pad-bot-70">
             <div class="row">
                 <div class="con-title">
-                    <h2>Nos <span>Formation</span></h2>
+                    <h2>Nos <span>Formations</span></h2>
                     <p>Vous trouverez ci-dessous l'ensemble de nos différentes formations proposées au sein du Lycée Robert Schuman</p>
                 </div>
             </div>

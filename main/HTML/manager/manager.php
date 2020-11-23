@@ -37,40 +37,29 @@ public function connexion($con){
           $req = $bdd->prepare('INSERT INTO utilisateur(nom, prenom, mdp, mail) VALUES(:nom, :prenom, :mdp, :mail)');
           $a = $req->execute(array('nom'=>$new->getNom(), 'prenom'=>$new->getPrenom(), 'mdp'=>md5($new->getMdp()), 'mail'=>$new->getMail()));
           $b = $req->fetch();
-if ($b == true) {
-            $_SESSION['id'] = $b['id'];
-            header('Location: ../../../index.php');
-            mail($new->getMail());
 
 
-          }
-          else {
-           echo "Mauvais login veuillez réessayer !";
-           header('Location:../../../index.php');
-          }
-}
-          public function Mail($donnee){
           $mail = new PHPMailer();
           $mail->isSMTP();                                            // Send using SMTP
           $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
           $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-          $mail->Username   = 'iliassalmiii@outlook.com';                     // SMTP username
-          $mail->Password   = '4d2d909e';                               // SMTP password
+          $mail->Username   = 'irisitalianna75@gmail.com';                     // SMTP username
+          $mail->Password   = 'iris75000';                               // SMTP password
           $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
           $mail->Port       = 587;                                    // TCP port to connect to
 
           //Recipients
-          $mail->setFrom('iliassalmiii@outlook.com', 'Nouvelle demande de contact');
-          $mail->addAddress('Contact');     // Add a recipient //Recipients
-           $mail->Body    =   $donnee->getmessage();
+          $mail->setFrom('irisitalianna75@gmail.com', 'Nouvelle demande de contact');
+          $mail->addAddress($new->getMail(), 'Contact');     // Add a recipient //Recipients
+           $mail->Body    =   'Bonjour bienvenue';
           if(!$mail->Send()) {
             echo '<body onLoad="alert(\'Erreur\')">';
           echo '<meta http-equiv="refresh" content="0;URL=../View/contact.php">';
           } else {
-             header("location: ../../index.php");
+             header("location: ../../../index.php");
           }
+}
 
-    }
 
     public function modification_user($user,$id)
     	    {

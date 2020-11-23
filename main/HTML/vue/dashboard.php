@@ -59,16 +59,7 @@
 <div class="table100 ver1 m-b-110">
 <div class="table100-head">
 <table>
-<thead>
-<tr class="row100 head">
-<th class="cell100 column1">Nom</th>
-<th class="cell100 column2">Prenom</th>
-<th class="cell100 column3">mdp</th>
-    <th class="cell100 column4">mail</th>
-<th class="cell100 column5">role</th>
 
-</tr>
-</thead>
 </table>
 </div></p>
 
@@ -88,13 +79,28 @@
   $donnees= $req->fetchall();
 
   foreach ($donnees as $value) { ?>
+    <div class="tab-inn">
+        <div class="table-responsive table-desi">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>nom</th>
+                        <th>prenom</th>
+                        <th>mdp</th>
+                        <th>mail</th>
+                        <th>role</th>
+                    </tr>
+                </thead>
+                <tbody>
+
     <tr class="row100 body">
-      <p> nom :  <td class="cell100 column1"><?php echo $value['nom']?></td> </p>
-<p> prenom :  <td class="cell100 column1"><?php echo $value['prenom']?></td> </p>
-        <p> mdp :  <td class="cell100 column1"><?php echo $value['mdp']?></td> </p>
-    <p> mail :  <td class="cell100 column1"><?php echo $value['mail']?></td> </p>
-<p> role :  <td class="cell100 column1"><?php echo $value['role']?></td> </p>
-<p>////////////////////////////////////////////// </p>
+
+      <td class="cell100 column1"><?php echo $value['nom']?></td>
+<td class="cell100 column1"><?php echo $value['prenom']?></td>
+        <td class="cell100 column1"><?php echo $value['mdp']?></td>
+  <td class="cell100 column1"><?php echo $value['mail']?></td>
+<td class="cell100 column1"><?php echo $value['role']?></td>
+
 
 
          </tr>

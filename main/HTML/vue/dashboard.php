@@ -50,212 +50,288 @@
             </div>
         </div>
 
-                        <div class="udb-sec udb-cour-stat">
-                            <h4><img src="images/icon/db3.png" alt="" /> Course Status</h4>
-                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.The point of using Lorem Ipsummaking it look like readable English.</p>
-                            <div class="pro-con-table">
-                                <table class="bordered responsive-table">
-                                    <thead>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>Course Name</th>
-                                            <th>Start Date</th>
-                                            <th>End Date</th>
-                                            <th>Status</th>
-                                            <th>Edit</th>
-                                            <th>View</th>
-                                        </tr>
-                                    </thead>
+        <div class="container">
 
-                                    <tbody>
-                                        <tr>
-                                            <td>01</td>
-                                            <td>Software Testing</td>
-                                            <td>12May 2018</td>
-                                            <td>18Aug 2018</td>
-                                            <td><span class="pro-user-act">active</span></td>
-                                            <td><a href="sdb-course-edit.php" class="pro-edit">edit</a></td>
-                                            <td><a href="sdb-course-view.php" class="pro-edit">view</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>02</td>
-                                            <td>Mechanical Design</td>
-                                            <td>05Jan 2019</td>
-                                            <td>10Feb 2019</td>
-                                            <td><span class="pro-user-act">active</span></td>
-                                            <td><a href="sdb-course-edit.php" class="pro-edit">edit</a></td>
-                                            <td><a href="sdb-course-view.php" class="pro-edit">view</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>03</td>
-                                            <td>Architecture & Planning</td>
-                                            <td>21Jun 2020</td>
-                                            <td>08Dec 2020</td>
-                                            <td><span class="pro-user-act">active</span></td>
-                                            <td><a href="sdb-course-edit.php" class="pro-edit">edit</a></td>
-                                            <td><a href="sdb-course-view.php" class="pro-edit">view</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>04</td>
-                                            <td>Board Exam Training</td>
-                                            <td>08Jun 2018</td>
-                                            <td>21Sep 2018</td>
-                                            <td><span class="pro-user-act pro-user-de-act">de-active</span></td>
-                                            <td><a href="sdb-course-edit.php" class="pro-edit">edit</a></td>
-                                            <td><a href="sdb-course-view.php" class="pro-edit">view</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>05</td>
-                                            <td>Yoga Training Classes</td>
-                                            <td>16JFeb 2018</td>
-                                            <td>26Mar 2018</td>
-                                            <td><span class="pro-user-act pro-user-de-act">de-active</span></td>
-                                            <td><a href="sdb-course-edit.php" class="pro-edit">edit</a></td>
-                                            <td><a href="sdb-course-view.php" class="pro-edit">view</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+<!-- Affichage du tableau contenant des informations -->
+
+<p>  <div class="container-table100">
+<div class="wrap-table100">
+<div class="table100 ver1 m-b-110">
+<div class="table100-head">
+<table>
+<thead>
+<tr class="row100 head">
+<th class="cell100 column1">Nom</th>
+<th class="cell100 column2">Prenom</th>
+<th class="cell100 column3">mdp</th>
+    <th class="cell100 column4">mail</th>
+<th class="cell100 column5">role</th>
+
+</tr>
+</thead>
+</table>
+</div></p>
+
+<div class="table100-body js-pscroll">
+<table>
+<tbody>
+<!-- Selection de toute les réservations -->
+  <?php
+  try {
+    $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+  } catch (\Exception $e) {
+    die('Erreur:'.$e->getmessage());
+  }
+
+  $req = $bdd->prepare('SELECT * FROM utilisateur');
+  $req->execute(array('mail'=>$_SESSION['mail']));
+  $donnees= $req->fetchall();
+
+  foreach ($donnees as $value) { ?>
+    <tr class="row100 body">
+      <p> nom :  <td class="cell100 column1"><?php echo $value['nom']?></td> </p>
+<p> prenom :  <td class="cell100 column1"><?php echo $value['prenom']?></td> </p>
+        <p> mdp :  <td class="cell100 column1"><?php echo $value['mdp']?></td> </p>
+    <p> mail :  <td class="cell100 column1"><?php echo $value['mail']?></td> </p>
+<p> role :  <td class="cell100 column1"><?php echo $value['role']?></td> </p>
+<p>////////////////////////////////////////////// </p>
+
+
+         </tr>
+
+<?php
+ }
+?>
+
+</tbody>
+</table>
+</div>
+</div>
+<section>
+    <div class="container com-sp pad-bot-70">
+        <div class="row">
+            <div class="cor about-sp">
+
+                <div class="ed-about-tit">
+                    <div class="con-title">
+                        <h2>Offres alternances</h2>
+                        <p>Vous trouverez ci dessous de nombreuses offres d'alternances </p>
+                    </div>
+                </div>
+                <div class="s18-age-event l-info-pack-days">
+                    <ul>
+                        <li>
+
+
+                                <?php
+
+                                $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+                                $tab_requête = 'SELECT nom FROM evenement';
+                                $red = $bdd->query($tab_requête);
+                                $tableau =  $red->fetchall();
+
+                              ?>
+
+                              <?php
+
+                              $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+                              $tab_requête = 'SELECT description FROM evenement';
+                              $red = $bdd->query($tab_requête);
+                              $tab =  $red->fetchall();
+
+                            ?>
+
+
+
+                            <?php
+
+                            $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+                            $tab_requête = 'SELECT duree FROM evenement';
+                            $red = $bdd->query($tab_requête);
+                            $tab1 =  $red->fetchall();
+
+                            ?>
+
+                            <div class="age-eve-com age-eve-1">
+                                <img src="images/icon/awa/2.png" alt="">
                             </div>
-                        </div>
-                        <div class="udb-sec udb-time">
-                            <h4><img src="images/icon/db4.png" alt="" /> Class Time Line</h4>
-                            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                            <div class="tour_head1 udb-time-line days">
-                                <ul>
-                                    <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <div class="sdb-cl-tim">
-                                            <div class="sdb-cl-day">
-                                                <h5>Today</h5>
-                                                <span>10Sep 2018</span>
-                                            </div>
-                                            <div class="sdb-cl-class">
-                                                <ul>
-                                                    <li>
-                                                        <div class="sdb-cl-class-tim tooltipped" data-position="top" data-delay="50" data-tooltip="Class timing">
-                                                            <span>09:30 am</span>
-                                                            <span>10:15 pm</span>
-                                                        </div>
-                                                        <div class="sdb-cl-class-name tooltipped" data-position="top" data-delay="50" data-tooltip="Class Details">
-                                                            <h5>Software Testing <span>John Smith</span></h5>
-                                                            <span class="sdn-hall-na">Apj Hall 112</span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="sdb-cl-class-tim tooltipped" data-position="top" data-delay="50" data-tooltip="Class timing">
-                                                            <span>10:15 am</span>
-                                                            <span>11:00 am</span>
-                                                        </div>
-                                                        <div class="sdb-cl-class-name tooltipped" data-position="top" data-delay="50" data-tooltip="Class Details">
-                                                            <h5>Mechanical Design Classes <span>Stephanie</span></h5>
-                                                            <span class="sdn-hall-na">Apj Hall 112</span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="sdb-cl-class-tim">
-                                                            <span>11:00 am</span>
-                                                            <span>11:45 am</span>
-                                                        </div>
-                                                        <div class="sdb-cl-class-name sdb-cl-class-name-lev">
-                                                            <h5>Board Exam Training Classes <span>Matthew</span></h5>
-                                                            <span class="sdn-hall-na">Apj Hall 112</span>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <div class="sdb-cl-tim">
-                                            <div class="sdb-cl-day">
-                                                <h5>Tuesday</h5>
-                                                <span>11Sep 2018</span>
-                                            </div>
-                                            <div class="sdb-cl-class">
-                                                <ul>
-                                                    <li>
-                                                        <div class="sdb-cl-class-tim tooltipped" data-position="top" data-delay="50" data-tooltip="Class timing">
-                                                            <span>9:30 am</span>
-                                                            <span>10:15 am</span>
-                                                        </div>
-                                                        <div class="sdb-cl-class-name tooltipped" data-position="top" data-delay="50" data-tooltip="Class Details">
-                                                            <h5>Agriculture <span>John Smith</span></h5>
-                                                            <span class="sdn-hall-na">Apj Hall 112</span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="sdb-cl-class-tim">
-                                                            <span>10:15 am</span>
-                                                            <span>11:00 am</span>
-                                                        </div>
-                                                        <div class="sdb-cl-class-name">
-                                                            <h5>Google Product Training <span>Stephanie</span></h5>
-                                                            <span class="sdn-hall-na">Apj Hall 112</span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="sdb-cl-class-tim">
-                                                            <span>11:00 am</span>
-                                                            <span>11:45 am</span>
-                                                        </div>
-                                                        <div class="sdb-cl-class-name sdb-cl-class-name-lev">
-                                                            <h5>Web Design & Development <span>Matthew</span></h5>
-                                                            <span class="sdn-hall-na">Apj Hall 112</span>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <div class="sdb-cl-tim">
-                                            <div class="sdb-cl-day">
-                                                <h5>Wednesday</h5>
-                                                <span>12Sep 2018</span>
-                                            </div>
-                                            <div class="sdb-cl-class">
-                                                <ul>
-                                                    <li>
-                                                        <div class="sdb-cl-class-tim">
-                                                            <span>9:30 am</span>
-                                                            <span>10:15 am</span>
-                                                        </div>
-                                                        <div class="sdb-cl-class-name">
-                                                            <h5>Software Testing <span>John Smith</span></h5>
-                                                            <span class="sdn-hall-na">Apj Hall 112</span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="sdb-cl-class-tim">
-                                                            <span>10:15 am</span>
-                                                            <span>11:00 am</span>
-                                                        </div>
-                                                        <div class="sdb-cl-class-name">
-                                                            <h5>Mechanical Design Classes <span>Stephanie</span></h5>
-                                                            <span class="sdn-hall-na">Apj Hall 112</span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="sdb-cl-class-tim">
-                                                            <span>11:00 am</span>
-                                                            <span>11:45 am</span>
-                                                        </div>
-                                                        <div class="sdb-cl-class-name sdb-cl-class-name-lev">
-                                                            <h5>Board Exam Training Classes <span>Matthew</span></h5>
-                                                            <span class="sdn-hall-na">Apj Hall 112</span>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <h4><span>Holiday: </span> Thursday </h4>
-                                        <p>After breakfast, proceed for tour of Dubai city. Visit Jumeirah Mosque, World Trade Centre, Palaces and Dubai Museum. Enjoy your overnight stay at the hotel.In the evening, enjoy a tasty dinner on the Dhow cruise.
-                                            Later, head back to the hotel for a comfortable overnight stay.</p>
-                                    </li>
-                                </ul>
+
+                            <div class="s17-eve-time">
+
+
+                            <div class="s17-eve-time-tim">
+                                <?php echo $tab1[0][0] ." mois";?>
                             </div>
+
+
+<!-- description du nom de l'entreprise de l'offre -->                  <div class="s17-eve-time-msg">
+                                    <?php echo $tableau[0][0]; ?>
+
+
+    <!-- description de l'offre d'alternance -->                              <div class="time-hide time-hide-2">
+
+<?php echo $tab[0][0]; ?>
+
+
+                                  </div>
+</div>
+</div>
+
+                                  <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
+                                  <i class="fa fa-angle-down"></i>
+                                  </a>
+                                  <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
+                                  <i class="fa fa-angle-up"></i>
+
+                                  </a>
+
+
+
+
+
+
+
+
+                                                        </li>
+                        <li>
+                            <div class="age-eve-com age-eve-1">
+                                <img src="images/icon/awa/2.png" alt="">
+                            </div>
+                            <div class="s17-eve-time">
+                                <div class="s17-eve-time-tim">
+                                    <?php echo $tab1[1][0] ." mois"; ?>
+                                </div>
+
+                                <div class="s17-eve-time-msg">
+<?php echo $tableau[1][0]; ?>
+
+                               <div class="time-hide time-hide-2">
+
+<?php echo $tab[1][0]; ?>
+
+
+                          </div>
+
+                                </div>
+                            </div>
+
+                                                                  <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
+                                                                  <i class="fa fa-angle-down"></i>
+                                                                  </a>
+                                                                  <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
+                                                                  <i class="fa fa-angle-up"></i>
+
+                                                                  </a>
+
+                        </li>
+                        <li>
+
+
+                          <div class="age-eve-com age-eve-1">
+                              <img src="images/icon/awa/2.png" alt="">
+                          </div>
+                          <div class="s17-eve-time">
+                              <div class="s17-eve-time-tim">
+                                  <?php echo $tab1[2][0] ." mois"; ?>
+                              </div>
+
+                              <div class="s17-eve-time-msg">
+<?php echo $tableau[2][0]; ?>
+
+                             <div class="time-hide time-hide-2">
+
+<?php echo $tab[2][0]; ?>
+
+
                         </div>
+
+                              </div>
+                          </div>
+
+                                                                <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
+                                                                <i class="fa fa-angle-down"></i>
+                                                                </a>
+                                                                <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
+                                                                <i class="fa fa-angle-up"></i>
+
+                                                                </a>
+
+
+                        </li>
+                        <li>
+
+
+                          <div class="age-eve-com age-eve-1">
+                              <img src="images/icon/awa/2.png" alt="">
+                          </div>
+                          <div class="s17-eve-time">
+                              <div class="s17-eve-time-tim">
+                                  <?php echo $tab1[3][0] ." mois"; ?>
+                              </div>
+
+                              <div class="s17-eve-time-msg">
+<?php echo $tableau[3][0]; ?>
+
+                             <div class="time-hide time-hide-2">
+
+<?php echo $tab[3][0]; ?>
+
+
+                        </div>
+
+                              </div>
+                          </div>
+
+                                                                <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
+                                                                <i class="fa fa-angle-down"></i>
+                                                                </a>
+                                                                <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
+                                                                <i class="fa fa-angle-up"></i>
+
+                                                                </a>
+
+
+                        </li>
+                        <li>
+
+
+                          <div class="age-eve-com age-eve-1">
+                              <img src="images/icon/awa/2.png" alt="">
+                          </div>
+                          <div class="s17-eve-time">
+                              <div class="s17-eve-time-tim">
+                                  <?php echo $tab1[4][0] ." mois"; ?>
+                              </div>
+
+                              <div class="s17-eve-time-msg">
+<?php echo $tableau[4][0]; ?>
+
+                             <div class="time-hide time-hide-2">
+
+<?php echo $tab[4][0]; ?>
+
+
+                        </div>
+
+                              </div>
+                          </div>
+
+                                                                <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
+                                                                <i class="fa fa-angle-down"></i>
+                                                                </a>
+                                                                <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
+                                                                <i class="fa fa-angle-up"></i>
+
+                                                                </a>
+
+
+                        </li>
+
+
+            </div>
+        </div>
+    </div>
+</section>
                     </div>
                 </div>
             </div>

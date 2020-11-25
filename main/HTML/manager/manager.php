@@ -1,4 +1,13 @@
 <?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+//Recuperation de données des page suivantes //
+require '../vendor/phpmailer/phpmailer/src/Exception.php';
+require '../vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require '../vendor/phpmailer/phpmailer/src/SMTP.php';
+require '../vendor/autoload.php';
+
 Class Manager{
 
 public function connexion($con){
@@ -12,11 +21,12 @@ public function connexion($con){
   var_dump($con);
   if ($c == true) {
     $_SESSION['id'] = $c['id'];
-     header('Location: ../index.php');
+     header('Location: ../vue/db-profile.php');
   }
   else {
     echo "Mauvais login veuillez réessayer !";
-     header('Location:../indexx.html');
+
+     header('Location:../../../indexx.html');
   }
 
   }
@@ -27,18 +37,29 @@ public function connexion($con){
           $req = $bdd->prepare('INSERT INTO utilisateur(nom, prenom, mdp, mail) VALUES(:nom, :prenom, :mdp, :mail)');
           $a = $req->execute(array('nom'=>$new->getNom(), 'prenom'=>$new->getPrenom(), 'mdp'=>md5($new->getMdp()), 'mail'=>$new->getMail()));
           $b = $req->fetch();
-if ($b == true) {
-            $_SESSION['id'] = $b['id'];
-
-            header('Location: ../index.php');
 
 
+          $mail = new PHPMailer();
+          $mail->isSMTP();                                            // Send using SMTP
+          $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+          $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+          $mail->Username   = 'irisitalianna75@gmail.com';                     // SMTP username
+          $mail->Password   = 'iris75000';                               // SMTP password
+          $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+          $mail->Port       = 587;                                    // TCP port to connect to
+
+          //Recipients
+          $mail->setFrom('irisitalianna75@gmail.com', 'Nouvelle demande de contact');
+          $mail->addAddress($new->getMail(), 'Contact');     // Add a recipient //Recipients
+           $mail->Body    =   'Bonjour bienvenue';
+          if(!$mail->Send()) {
+            echo '<body onLoad="alert(\'Erreur\')">';
+          echo '<meta http-equiv="refresh" content="0;URL=../View/contact.php">';
+          } else {
+             header("location: ../../../index.php");
           }
-          else {
-           echo "Mauvais login veuillez réessayer !";
-           header('Location:../index.php');
-          }
-    }
+}
+
 
     public function modification_user($user,$id)
     	    {
@@ -54,7 +75,7 @@ if ($b == true) {
     	        ));
 
 
-    	           header('Location: ../vue/db-profils.php');
+    	           header('Location: ../vue/db-profile.php');
     	    }
 
 
@@ -110,9 +131,6 @@ public function reservation($k){
         'mail'=>$k->getMail()));
         header('Location:../../../index.php');
     }
-
-
-
 }
 
 

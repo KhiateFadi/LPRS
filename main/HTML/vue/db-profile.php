@@ -34,7 +34,182 @@ session_start();
 
 <body>
 
-<?php include('header.php'); ?>
+  <section>
+      <div class="ed-mob-menu">
+          <div class="ed-mob-menu-con">
+              <div class="ed-mm-left">
+                  <div class="wed-logo">
+                    <img style="width:50px;height:50px;" src="main/HTML/images/logo.png" alt="" />
+
+                  </div>
+              </div>
+              <div class="ed-mm-right">
+                  <div class="ed-mm-menu">
+                      <a href="#!" class="ed-micon"><i class="fa fa-bars"></i></a>
+                      <div class="ed-mm-inn">
+                          <a href="#!" class="ed-mi-close"><i class="fa fa-times"></i></a>
+                          <h4>Formation</h4>
+                          <ul>
+                            <li><a href="main/HTML/vue/all-courses.html">TROISIÈME PRÉPA PRO</a></li>
+                            <li><a href="main/HTML/vue/all-courses.html">BAC PRO TU</a></li>
+                            <li><a href="main/HTML/vue/all-courses.html">BAC PRO MEI</a></li>
+                            <li><a href="main/HTML/vue/admission.html">BAC PRO SN</a></li>
+                            <li><a href="main/HTML/vue/awards.html">FORMATION SST</a></li>
+                            <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
+                            <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
+                            <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
+                            <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
+                          </ul>
+                          <h4>Compte</h4>
+                          <ul>
+                              <li><a href="#!" data-toggle="modal" data-target="#modal1">Connexion</a></li>
+                              <li><a href="#!" data-toggle="modal" data-target="#modal2">Inscription</a></li>
+                          </ul>
+                          <h4>All Pages</h4>
+                          <ul>
+                              <li><a href="../../../index.php">Accueil</a></li>
+                              <li><a href="main/HTML/vue/all-courses.html">Formation</a></li>
+                              <li><a href="main/HTML/vue/awards.html">Evénement</a></li>
+                              <li><a href="main/HTML/vue/contact-us.html">Contact</a></li>
+
+                          </ul>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!--HEADER SECTION-->
+    <section>
+        <!-- TOP BAR -->
+        <div class="ed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ed-com-t1-left">
+                            <ul>
+                                <li><a href="#">LYCÉE PRIVÉ ET UFA - ROBERT SCHUMAN - Enseignement catholique sous contrat avec l'état</a>
+                                </li>
+                                <li><a href="#">Tél: 01 48 37 74 26</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ed-com-t1-right">
+                            <ul>
+
+                              <li><a href="#!" data-toggle="modal" data-target="#modal2">Inscription</a>
+                              </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOGO AND MENU SECTION -->
+        <div class="top-logo" data-spy="affix" data-offset-top="250">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wed-logo">
+                            <a href="../../../index.php"><img style="margin-left:60px;width:90px;height:90px;margin-top:-9px;" src="../images/logo.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="main-menu">
+                            <ul>
+                                <li><a href="../../../index.php">Accueil</a>
+                                </li>
+                                <li class="about-menu">
+                                    <a href="main/HTML/vue/all-courses.html" class="mm-arr">Formation</a>
+                                    <!-- MEGA MENU 1 -->
+                                    <div class="mm-pos">
+                                        <div class="about-mm m-menu">
+                                            <div class="m-menu-inn">
+                                                <div class="mm1-com mm1-s1">
+                                                    <div class="ed-course-in">
+                                                        <a class="course-overlay menu-about" href="main/HTML/vue/admission.html">
+                                                            <img src="main/HTML/images/site/Formation.jpg" alt="">
+                                                            <span>Formation</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mm1-com mm1-s3">
+                                                    <ul>
+                                                        <li><a href="main/HTML/vue/all-courses.html">TROISIÈME PRÉPA PRO</a></li>
+                                                        <li><a href="main/HTML/vue/all-courses.html">BAC PRO TU</a></li>
+                                                        <li><a href="main/HTML/vue/all-courses.html">BAC PRO MEI</a></li>
+                                                        <li><a href="main/HTML/vue/admission.html">BAC PRO SN</a></li>
+                                                        <li><a href="main/HTML/vue/awards.html">FORMATION SST</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="mm1-com mm1-s4">
+                                                    <ul>
+                                                        <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
+                                                        <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
+                                                        <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
+                                                        <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="admi-menu">
+                                    <a href="main/HTML/vue/awards.html" class="mm-arr">Evénement</a>
+                                    <!-- MEGA MENU 1 -->
+                                </li>
+                                <li><a href="main/HTML/vue/contact-us.html">Contact</a></li>
+                                <!--<li><a class='dropdown-button ed-sub-menu' href='#' data-activates='dropdown1'>Courses</a></li>-->
+                                <li class="cour-menu"/>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="all-drop-down-menu">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="search-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="search-form">
+                            <form>
+                                <div class="sf-type">
+                                    <div class="sf-input">
+                                        <input type="text" id="sf-box" placeholder="Search course and discount courses">
+                                    </div>
+                                    <div class="sf-list">
+                                        <ul>
+                                          <li><a href="main/HTML/vue/all-courses.html">TROISIÈME PRÉPA PRO</a></li>
+                                          <li><a href="main/HTML/vue/all-courses.html">BAC PRO TU</a></li>
+                                          <li><a href="main/HTML/vue/all-courses.html">BAC PRO MEI</a></li>
+                                          <li><a href="main/HTML/vue/admission.html">BAC PRO SN</a></li>
+                                          <li><a href="main/HTML/vue/awards.html">FORMATION SST</a></li>
+                                          <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
+                                          <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
+                                          <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
+                                          <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sf-submit">
+                                    <input type="submit" value="Search Course">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--END HEADER SECTION-->
 
 
@@ -45,7 +220,7 @@ session_start();
             <div class="container">
                 <div class="col-md-9 col-md-offset-3">
                     <ul>
-                        <li><a href="dashboard.php">My Dashboard</a></li>
+                        <li><a href="dashboard.html">My Dashboard</a></li>
                         <li><a href="db-profile.php" class="pro-act">Profile</a></li>
                         <li><a href="#">Notifications</a></li>
                     </ul>
@@ -91,7 +266,7 @@ session_start();
                                     </tbody>
                                 </table>
                                 <div class="sdb-bot-edit">
-                                    <a href="db-profile-bis.php" class="waves-effect waves-light btn-large sdb-btn sdb-btn-edit"><i class="fa fa-pencil"></i> Edit my profile</a>
+                                    <a href="db-profile-bis.html" class="waves-effect waves-light btn-large sdb-btn sdb-btn-edit"><i class="fa fa-pencil"></i> Edit my profile</a>
                                 </div>
                             </div>
                         </div>
@@ -134,14 +309,14 @@ session_start();
                     <div class="col-md-4 foot-tc-mar-t-o">
                         <h4>Formation</h4>
                         <ul>
-                          <li><a href="main/HTML/vue/all-courses.php">TROISIÈME PRÉPA PRO</a></li>
-                          <li><a href="main/HTML/vue/all-courses.php">BAC PRO TU</a></li>
-                          <li><a href="main/HTML/vue/all-courses.php">BAC PRO MEI</a></li>
-                          <li><a href="main/HTML/vue/admission.php">BAC PRO SN</a></li>
-                          <li><a href="main/HTML/vue/awards.php">FORMATION SST</a></li>
-                          <li><a href="main/HTML/vue/dashboard.php">BAC STI2D</a></li>
-                          <li><a href="main/HTML/vue/db-courses.php">BTS CPRP</a></li>
-                          <li><a href="main/HTML/vue/db-exams.php">BTS SIO – OPTION SISR</a></li>
+                          <li><a href="main/HTML/vue/all-courses.html">TROISIÈME PRÉPA PRO</a></li>
+                          <li><a href="main/HTML/vue/all-courses.html">BAC PRO TU</a></li>
+                          <li><a href="main/HTML/vue/all-courses.html">BAC PRO MEI</a></li>
+                          <li><a href="main/HTML/vue/admission.html">BAC PRO SN</a></li>
+                          <li><a href="main/HTML/vue/awards.html">FORMATION SST</a></li>
+                          <li><a href="main/HTML/vue/dashboard.html">BAC STI2D</a></li>
+                          <li><a href="main/HTML/vue/db-courses.html">BTS CPRP</a></li>
+                          <li><a href="main/HTML/vue/db-exams.html">BTS SIO – OPTION SISR</a></li>
                           <li><a href="main/HTML/vue/db-profile.php">BTS SIO – OPTION SLAM</a></li>
                         </ul>
                     </div>

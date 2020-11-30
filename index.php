@@ -1,6 +1,4 @@
-<?php session_start();
-
-?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -411,23 +409,20 @@
                     </a>
                     <h4>Mot de passe oublier </h4>
 
-                    <form class="s12" action="main/HTML/traitement/mdp-traitement.php" method="POST">
-
-
+                    <form class="s12">
                         <div>
                             <div class="input-field s12">
-                                <input type="mail" data-ng-model="name3" class="validate" name="email">
-                                <label>mail </label>
+                                <input type="text" data-ng-model="name3" class="validate">
+                                <label>Nom ou mail </label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s4">
-                                <input type="submit" value="Valider" class="waves-effect waves-light log-in-btn"> </div>
+                                <input type="submit" value="Submit" class="waves-effect waves-light log-in-btn"> </div>
                         </div>
                         <div>
                             <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Déja membre? Login</a> | <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Crée un compte </a> </div>
                         </div>
-
                     </form>
                 </div>
             </div>
